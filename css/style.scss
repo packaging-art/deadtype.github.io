@@ -104,7 +104,7 @@ a::selection {
 /* =============================================================================
    Links
    ========================================================================== */
-a, a:hover {
+a, a:hover, h1 {
   -webkit-transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
   -moz-transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
   -o-transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
@@ -133,7 +133,7 @@ p a, figcaption a, p a:hover, figcaption a:hover, aside a, aside a:hover, .feedc
 }
 
 /* wordmark + */
-a.standoutlink, .inner_grid_item:hover h4 a, a h4:hover, .title_subcaption .emphasis_link:hover, .super_underscore:hover h1 a  {
+a.standoutlink, .inner_grid_item:hover h4 a, a h4:hover, .title_subcaption .emphasis_link:hover, .super_underscore:hover h1 a, .work_caption_container:hover h1  {
   color: red;
 }
 
