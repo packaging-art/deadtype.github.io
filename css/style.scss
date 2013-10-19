@@ -104,7 +104,7 @@ a::selection {
 /* =============================================================================
    Links
    ========================================================================== */
-a, a .standoutlink, .emphasis_link, .emphasis_link:hover, .navigation li, .article_sub_info, .phone_number, p a, .grid :hover h4, .grid h4, a h4:hover, h4 a {
+a, a:hover {
   -webkit-transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
   -moz-transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
   -o-transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
@@ -112,14 +112,14 @@ a, a .standoutlink, .emphasis_link, .emphasis_link:hover, .navigation li, .artic
   transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
 }
 
-a, a .standoutlink, .emphasis_link, .emphasis_link:hover, .navigation li, .article_sub_info, .phone_number, p a, .title_subcaption .emphasis_link {
+a, a .standoutlink, .emphasis_link, .emphasis_link:hover, .navigation li, .article_sub_info, .phone_number, p a, .title_subcaption .emphasis_link, .title_subcaption a.subtle_emphasis, a.subtle_emphasis {
   font-style: italic;
   text-decoration: none;
   border-bottom: none;
   color: #999999;
 }
 
-html, button, input, select, textarea, p a, figcaption a, aside a, .feedcontent a, .plain_link, .plain_link:hover, a h4, a .workgrid_metainfo, .title_subcaption a:hover, .title_subcaption a {
+html, button, input, select, textarea, p a, figcaption a, aside a, .feedcontent a, .plain_link, .plain_link:hover, a h4, a .workgrid_metainfo, .title_subcaption a:hover, .title_subcaption a, .super_underscore h4 a:hover, .super_underscore h1 a {
   color: #333;
 }
 
@@ -133,9 +133,10 @@ p a, figcaption a, p a:hover, figcaption a:hover, aside a, aside a:hover, .feedc
 }
 
 /* wordmark + */
-a.standoutlink, .inner_grid_item:hover h4 a, a h4:hover, .title_subcaption .emphasis_link:hover {
+a.standoutlink, .inner_grid_item:hover h4 a, a h4:hover, .title_subcaption .emphasis_link:hover, .super_underscore:hover h1 a  {
   color: red;
 }
+
 
 .title_subcaption .emphasis_link, .link_non_italic {
   font-style:normal;
@@ -192,7 +193,7 @@ nav li a:hover {
   color: rgba(0, 0, 0, 0.85);
 }
 
-a:hover, .smallcaps a:hover, .emphasis_link:hover {
+a:hover, .smallcaps a:hover, .emphasis_link:hover, .title_subcaption a.subtle_emphasis:hover, a.subtle_emphasis:hover {
   color: red;
   border-bottom: none;
 }
@@ -307,6 +308,24 @@ p + p {
   margin: 2em 0;
 }
 
+.view_project_link {
+  margin-top: 1.4em;
+  display: inline-block;
+}
+
+.centered_layout .super_underscore h4 {
+  margin-bottom: 0.9em;
+}
+
+.hero_header_container .super_underscore h4 {
+  margin-bottom: 1.1em;
+}
+
+
+.super_underscore .divider_container .content_wrap {
+  width: 10em;
+}
+
 /* =============================================================================
    Lists
    ========================================================================== */
@@ -405,6 +424,10 @@ figcaption, aside {
   border-top: 1px solid lightgray;
 }
 
+.super_underscore .flex_border {
+
+}
+
 .label_holder, .overlay_label {
   position: absolute;
   left: 0;
@@ -413,12 +436,16 @@ figcaption, aside {
 }
 
 .overlay_label {
-  margin-top: -.9em;
+  margin-top: -0.9em;
+}
+
+.bottom_box .overlay_label {
+  margin-top: -0.75em;
 }
 
 .label_border {
   border: 1px solid lightgray;
-  background: #fafafa;
+  background: none;
   font-size: .7em;
   padding: .45em .85em .3em .85em;
 }
@@ -438,14 +465,14 @@ figcaption, aside {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.knockout_text, .knockout_text a, .work_item .knockout_text h4, .work_item.knockout_text h4 {
+.knockout_text, .knockout_text a, .work_item .knockout_text h4, .work_item.knockout_text h4, .knockout_text .workgrid_metainfo, .knockout_text .metainfo, .knockout_text h1 a {
   color: #fafafa;
 }
 
-/*.feed .divider_container:first-of-type,
-.work_page_sections .divider_container:first-of-type {
-  display: none;
-}*/
+.knockout_text .workgrid_metainfo .flex_border {
+  border-top: 1px solid #fafafa;
+}
+
 .pagination {
   margin-top: .3em;
 }
@@ -504,12 +531,6 @@ figcaption, aside {
   border-color: lightgray;
 }
 
-.sides_only {
-  border: none;
-  border-left: 1px solid #e6e6e6;
-  border-right: 1px solid #e6e6e6;
-}
-
 .flex_photo.see_through {
   padding-left: 5%;
   padding-right: 5%;
@@ -521,10 +542,6 @@ figcaption, aside {
 
 .text_center {
   text-align: center;
-}
-
-.error {
-
 }
 
 .centered_layout .error {
@@ -621,9 +638,9 @@ figcaption, aside {
   padding-bottom: 3.25em;
 }
 
-.hero_header_container.image_only.article_padding {
+/*.hero_header_container.image_only.article_padding {
   padding-bottom: 3em;
-}
+}*/
 
 .image_text.article_padding {
   padding-top: 3.25em;
@@ -642,11 +659,6 @@ figcaption, aside {
 .sub_header.work_image {
   padding-top: 2.25em;
   padding-bottom: 0.25em;
-}
-
-.zooted {
-  padding-top: 3em;
-  padding-bottom: 3em;
 }
 
 .article_padding.last {
@@ -730,27 +742,7 @@ aside.flex_caption {
   padding-right: 0em;
 }
 
-.footer_card {
-  font-size: .9em;
-  padding: 2em 0;
-  margin: 1em auto;
-  text-align: right;
-}
-
-.footer_card_container {
-  background: #f0f0f0;
-}
-
-footer .mainnav {
-  border-bottom: 1px solid lightgray;
-  padding-top: 1.25em;
-  padding-bottom: .2em;
-  margin-bottom: 1em;
-  display: none;
-}
-
 .nav_inverse {
-  /* background-color: hsla(0,0%,0%,.2);*/
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -813,17 +805,11 @@ figure:hover .overlay_color {
 }
 
 .title_subcaption {
-  margin-top: 2.4em;
+  margin-top: 1.6em;
 }
 
-.title_underscore {
-  display: inline-block;
-  border-bottom: 1px dotted lightgray;
-  padding-bottom: .8em;
-}
-
-.knockout_text .title_underscore {
-  border-bottom: 1px dotted white;
+.hero_header_container .title_subcaption {
+  margin-top: 1.8em;
 }
 
 .control_box {
@@ -846,11 +832,11 @@ figure:hover .overlay_color {
 .bottom_box {
   position: absolute;
   text-align: center;
-  bottom: 1.8em;
+  bottom: 1.9em;
   width: 100%;
 }
 
-.workgrid_metainfo {
+.workgrid_metainfo, .metainfo {
   font-family: "brandon-grotesque",sans-serif;
   text-transform: uppercase;
   font-style: normal;
@@ -874,87 +860,6 @@ figure:hover .overlay_color {
 .centered_layout .workgrid_metainfo {
   margin-top: 1em;
   max-width: 27em;
-}
-
-/* Work Preview Layers */
-.work_label .control_box {
-  width: 5em;
-}
-
-.work_label.border .control_box {
-  width: 5em;
-  border-top: 3px solid #fafafa;
-  padding-top: 1em;
-}
-
-.work_label.centered_layout .control_box {
-  width: auto;
-  padding: 1em;
-  border: 3px solid #fafafa;
-}
-
-.work_label.left .control_box {
-  left: 1.35em;
-}
-
-.work_label.right .control_box {
-  right: 1.35em;
-  direction: rtl;
-}
-
-.work_label.top .control_box {
-  top: 1.5em;
-}
-
-.work_label.bottom .control_box {
-  bottom: 1.5em;
-}
-
-.work_label .work_item figure {
-  height: auto;
-}
-
-.control_box {
-  float: left;
-  display: inline-block;
-}
-
-.work_label h4, .work_label.centered_layout h4 {
-  font-size: 1.2em;
-  line-height: 1.15;
-  width: 5em;
-  margin-bottom: 0em;
-}
-
-.work_label.centered_layout h4 {
-  width: 10em;
-}
-
-.work_label .workgrid_metainfo {
-  width: 10em;
-  padding-top: 1.6em;
-}
-
-.work_label.centered_layout .workgrid_metainfo {
-  width: 20em;
-  padding-top: 0;
-}
-
-.two_col .control_box {
-  width: auto;
-  display: inline-block;
-}
-
-.two_col h4 {
-  width: auto;
-  padding-top: .9em;
-  margin-right: 1em;
-}
-
-.two_col h4, .two_col .workgrid_metainfo {
-  border-top: 4px solid white;
-  display: inline-block;
-  float: left;
 }
 
 /* Work Preview */
@@ -1019,9 +924,9 @@ figure:hover .overlay_color {
   padding-bottom: 0;
 }
 
-  .grid:nth-child(1) {
-  padding-top: 0;
-  }
+.grid:nth-child(1) {
+padding-top: 0;
+}
 
 
 /* ==|== media queries ======================================================
@@ -1109,6 +1014,10 @@ figure:hover .overlay_color {
     margin-top: -.95em;
   }
 
+  .bottom_box .overlay_label {
+    margin-top: -.7em;
+  }
+
   h2 {
     font-size: 2em;
     margin: 0 auto;
@@ -1129,14 +1038,6 @@ figure:hover .overlay_color {
   .work_image figure {
     max-height: 29em;
     overflow: hidden;
-  }
-
-  .work_label.left .control_box {
-    left: 1.8em;
-  }
-
-  .work_label.top .control_box {
-    top: 1.7em;
   }
 
   .work_image {
@@ -1282,6 +1183,10 @@ figure:hover .overlay_color {
 @media only screen and (min-width: 57em) {
   h2 {
     font-size: 1.9em;
+  }
+
+ .overlay_label {
+    margin-top: -1em;
   }
 
   .clients [class*="icon-"] {
