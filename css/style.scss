@@ -119,7 +119,7 @@ a, a .standoutlink, .emphasis_link, .emphasis_link:hover, .navigation li, .artic
   color: #999999;
 }
 
-html, button, input, select, textarea, p a, figcaption a, aside a, .feedcontent a, .plain_link, .plain_link:hover, a h4, a .workgrid_metainfo, .title_subcaption a:hover, .title_subcaption a, .super_underscore h4 a:hover, .super_underscore h1 a {
+html, button, input, select, textarea, p a, figcaption a, aside a, .feedcontent a, .plain_link, .plain_link:hover, a h4, a .workgrid_metainfo, .title_subcaption a:hover, .title_subcaption a, .super_underscore h4 a:hover {
   color: #333;
 }
 
@@ -133,7 +133,7 @@ p a, figcaption a, p a:hover, figcaption a:hover, aside a, aside a:hover, .feedc
 }
 
 /* wordmark + */
-a.standoutlink, .inner_grid_item:hover h4 a, a h4:hover, .title_subcaption .emphasis_link:hover, .super_underscore:hover h1 a, .super_underscore:hover h1  {
+a.standoutlink, .inner_grid_item:hover h4 a, a h4:hover, .title_subcaption .emphasis_link:hover, .super_underscore:hover h1 a, .super_underscore:hover h1, , .super_underscore h1 a  {
   color: red;
 }
 
