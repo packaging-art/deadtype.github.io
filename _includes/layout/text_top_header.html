@@ -1,0 +1,13 @@
+{% include layout/project_top_title_summary.html %}
+
+{% if page.hide_image_inpage == nil %}
+<div class="{{page.image_container_width}}">
+    <div class="{{page.image_width}} image_only first article_padding ">
+        <figure class=" clearfix">
+            {% include system/picturefill_art_direction_page.html %}
+                <div class="image_layered_overlay {{include.overlay}}">
+               </div>
+        </figure>
+    </div>
+</div>
+{% endif %}

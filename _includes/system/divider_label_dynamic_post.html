@@ -1,0 +1,22 @@
+<div class="divider_container maincontainer">
+	<div class="content_wrap">
+		<div class="label_holder">
+
+			{% if post.label %}
+				<div class="overlay_label">
+					<h1 class=" {% if post.label_border %} label_border {% endif %}">{{post.label}}</h1>
+				</div>
+			{% endif %}
+
+			<div class="flex_container_divider">
+
+				<div class="flex_border"></div>
+				{% if post.label %}
+					<h1 class="invisible">{{post.label}}</h1>
+				{% endif %}
+				<div class="flex_border"></div>
+
+			</div>
+		</div>
+	</div>
+</div>

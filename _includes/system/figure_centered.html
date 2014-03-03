@@ -1,0 +1,9 @@
+<div class="figure_container {{include.background}} {{include.outer_width}} {{include.background_color}}">
+     <figure class="{{include.inner_width}} clearfix">
+    	{% include system/picturefill.html %}
+    </figure>
+</div>
+
+{% if include.caption %}
+	<figcaption class="content_wrap">{{include.caption}}</figcaption>
+{% endif %}

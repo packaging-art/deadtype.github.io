@@ -1,0 +1,43 @@
+---
+layout: default
+category: photo_page
+---
+
+
+<article class="image_text article_padding section_alternation clearfix">
+	<figure class="{{page.image_width}} {{page.background_color}} {{page.background_frame}}">
+			{% if page.secondary_width %}
+			<div class="{{page.secondary_width}}">
+			{% endif %}
+
+            	{% include system/picturefill_dynamic_page.html %}
+
+            {% if page.secondary_width %}
+			</div>
+			{% endif %}
+	</figure>
+
+	<div class="maincontainer">
+		<div class="content_wrap image_caption">
+			<div class="brief photo_post">
+				<header>
+					<h4><a href="{{page.url}}">{{page.title}}</a></h4>
+				</header>
+
+			    <div class="feedcontent">
+	                {{page.preview}}.
+			    </div>
+
+			     {% if page.show_date != nil %}
+			    <footer class="blah">
+						<a href="{{page.url}}">{{ page.date | date: "%b %d, %Y" }}</a>
+					</footer>
+				 {% endif %}
+
+			</div>
+		</div>
+	</div>
+
+	{{ content }}
+</article>
+

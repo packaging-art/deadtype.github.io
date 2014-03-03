@@ -1,0 +1,25 @@
+---
+layout: default
+category: project_page
+---
+{% include layout/project_top_title_summary.html %}
+
+<article class="image_text first article_padding section_alternation clearfix">
+	<figure class="{{page.image_width}} {{page.background_color}} {{page.background_frame}}">
+			{% if page.secondary_width %}
+			<div class="{{page.secondary_width}}">
+			{% endif %}
+
+			{% if page.resolution_independent != null %}
+				<img src="/img/{{page.path}}/{{page.image}}">
+			{% else %}
+				{% include system/picturefill_dynamic_page.html %}
+			{% endif %}
+
+            {% if page.secondary_width %}
+			</div>
+			{% endif %}
+	</figure>
+	{{ content }}
+</article>
+
