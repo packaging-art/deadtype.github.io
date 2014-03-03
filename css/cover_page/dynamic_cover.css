@@ -15,7 +15,7 @@ title: Cover Background Images
 {% for post in site.categories.cover %}
 
 	.{{post.cover_class}} {
-		background-image: url('/img/{{post.path}}/2X_{{post.image}}');
+		background-image: url('/img/{{post.path}}/2x_{{post.image}}');
 	}
 {% endfor %}
 
@@ -25,7 +25,7 @@ title: Cover Background Images
 {% for post in site.categories.cover %}
 
 	.{{post.cover_class}} {
-		background-image: url('/img/{{post.path}}/2X_{{post.image}}');
+		background-image: url('/img/{{post.path}}/2x_{{post.image}}');
 	}
 {% endfor %}
 
