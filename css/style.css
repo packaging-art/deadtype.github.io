@@ -1301,6 +1301,11 @@ aside.flex_caption {
     margin-bottom: -5.85em;
   }
 
+  .intro_text {
+    line-height: 2.1;
+    font-size: 1.1em;
+  }
+
   /* Articles Internal Spacing*/
   .article_padding .article_padding {
     padding-top: 3.25em;
