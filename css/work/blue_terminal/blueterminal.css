@@ -15,13 +15,13 @@
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
-	
 
-	-moz-font-feature-settings:"liga=1, dlig=1"; 
-	-moz-font-feature-settings:"liga", "dlig"; /* EDIT: new syntax for FF 15+ */ 
-	-ms-font-feature-settings:"liga", "dlig"; 
-	-o-font-feature-settings:"liga", "dlig"; 
-	-webkit-font-feature-settings:"liga", "dlig"; 
+
+	-moz-font-feature-settings:"liga=1, dlig=1";
+	-moz-font-feature-settings:"liga", "dlig"; /* EDIT: new syntax for FF 15+ */
+	-ms-font-feature-settings:"liga", "dlig";
+	-o-font-feature-settings:"liga", "dlig";
+	-webkit-font-feature-settings:"liga", "dlig";
 	font-feature-settings:"liga", "dlig";
 }
 .blue_terminal_demo .wordmark, .blue_terminal_demo .infeed_headertophalf {	-webkit-font-smoothing: subpixel-antialiased;
@@ -41,10 +41,10 @@
 	margin-right: auto;
 }
 
-img { 
+img {
 	border: 0;
 	width: 100%;
-	vertical-align: bottom;   
+	vertical-align: bottom;
 }
 
 
@@ -105,7 +105,7 @@ margin-top: 3em;
 }
 
 .blue_terminal_demo h2 a {
-	text-decoration: none; 
+	text-decoration: none;
 	color: hsla(0,0%,20%,1);
 }
 
@@ -131,7 +131,7 @@ padding-bottom: 1em;}
 
 /*
 a.standoutlink, .nav_inverse nav li a:hover, a:hover, .smallcaps a:hover, .emphasis_link:hover, .smallcaps, .feed_wrap .brief:before, .content_wrap .brief:before   {
-  color: dodgerblue; 
+  color: dodgerblue;
 }
 
 ::-moz-selection { background: dodgerblue; color: #fff;  }
@@ -351,19 +351,19 @@ you can use the generic selector below, but it's slower:
 }
 
 
-.blue_terminal_demo .back .infeed_header a, .blue_terminal_demo .back .energy_categories a, .blue_terminal_demo .back .infeed_header [class^="icon-"], 
-.blue_terminal_demo .back .energy_source_item:after, .blue_terminal_demo .back .infeed_body, .blue_terminal_demo .back_meta, .blue_terminal_demo .back_meta a, .blue_terminal_demo .super_featured a, .blue_terminal_demo .super_featured a:hover, /* Rest of white text with black shadow */ .super_featured_meta, .blue_terminal_demo .superfeatured_control, .blue_terminal_demo .superfeatured_control:hover, .blue_terminal_demo .featured_commentary, .blue_terminal_demo .super_featured_body  h3,/* Fuel types color */ .blue_terminal_demo [class*="featured_image_"] .front .coal .text, .blue_terminal_demo [class*="featured_image_"] .front .coal:after,  
-.blue_terminal_demo [class*="featured_image_"] .front .oil .text, .blue_terminal_demo [class*="featured_image_"] .front .oil:after, 
-.blue_terminal_demo [class*="featured_image_"] .front .hydroelectric .text, .blue_terminal_demo [class*="featured_image_"] .front .hydroelectric:after, 
-.blue_terminal_demo [class*="featured_image_"] .front .wind .text, .blue_terminal_demo [class*="featured_image_"] .front .wind:after, 
-.blue_terminal_demo [class*="featured_image_"] .front .geothermal .text, .blue_terminal_demo [class*="featured_image_"] .front .geothermal:after, 
-.blue_terminal_demo [class*="featured_image_"] .front .nuclear .text, .blue_terminal_demo [class*="featured_image_"] .front .nuclear:after, 
-.blue_terminal_demo [class*="featured_image_"] .front .solar .text, .blue_terminal_demo [class*="featured_image_"] .front .solar:after, 
-.blue_terminal_demo [class*="featured_image_"] .front .gas .text, .blue_terminal_demo [class*="featured_image_"] .front .gas:after, 
+.blue_terminal_demo .back .infeed_header a, .blue_terminal_demo .back .energy_categories a, .blue_terminal_demo .back .infeed_header [class^="icon-"],
+.blue_terminal_demo .back .energy_source_item:after, .blue_terminal_demo .back .infeed_body, .blue_terminal_demo .back_meta, .blue_terminal_demo .back_meta a, .blue_terminal_demo .super_featured a, .blue_terminal_demo .super_featured a:hover, /* Rest of white text with black shadow */ .super_featured_meta, .blue_terminal_demo .superfeatured_control, .blue_terminal_demo .superfeatured_control:hover, .blue_terminal_demo .featured_commentary, .blue_terminal_demo .super_featured_body  h3,/* Fuel types color */ .blue_terminal_demo [class*="featured_image_"] .front .coal .text, .blue_terminal_demo [class*="featured_image_"] .front .coal:after,
+.blue_terminal_demo [class*="featured_image_"] .front .oil .text, .blue_terminal_demo [class*="featured_image_"] .front .oil:after,
+.blue_terminal_demo [class*="featured_image_"] .front .hydroelectric .text, .blue_terminal_demo [class*="featured_image_"] .front .hydroelectric:after,
+.blue_terminal_demo [class*="featured_image_"] .front .wind .text, .blue_terminal_demo [class*="featured_image_"] .front .wind:after,
+.blue_terminal_demo [class*="featured_image_"] .front .geothermal .text, .blue_terminal_demo [class*="featured_image_"] .front .geothermal:after,
+.blue_terminal_demo [class*="featured_image_"] .front .nuclear .text, .blue_terminal_demo [class*="featured_image_"] .front .nuclear:after,
+.blue_terminal_demo [class*="featured_image_"] .front .solar .text, .blue_terminal_demo [class*="featured_image_"] .front .solar:after,
+.blue_terminal_demo [class*="featured_image_"] .front .gas .text, .blue_terminal_demo [class*="featured_image_"] .front .gas:after,
 .blue_terminal_demo [class*="featured_image_"] .front .biofuel .text, .blue_terminal_demo [class*="featured_image_"] .front .biofuel:after, /* Featured Image colors */.full_image_textstyle, .blue_terminal_demo [class*="featured_image_"] .flip_control span, .blue_terminal_demo [class*="featured_image_"] .infeed_meta, .blue_terminal_demo [class*="featured_image_"] .infeed_meta a, .blue_terminal_demo [class*="featured_image_"] .category_link, .blue_terminal_demo [class*="featured_image_"] .infeed_body h2 a, .blue_terminal_demo [class*="featured_image_"] .energy_source_item:after, .blue_terminal_demo [class*="featured_image_"] .featured, .blue_terminal_demo [class*="featured_text_"] .back .featured:after, /* Featured Image sub info*/.subtitle_featured, .blue_terminal_demo .wordmark a, .blue_terminal_demo .search, .blue_terminal_demo .search:focus, .blue_terminal_demo .search:active,/**/ .blue_terminal_demo h4, form fieldset label, .blue_terminal_demo .sign_in_form input[type="submit"], .blue_terminal_demo .back .featured, .blue_terminal_demo .profile_controls [class^="icon-"], .blue_terminal_demo #pages_reset_sent .profile_banner_container p, .blue_terminal_demo [class*="featured_image_"] .front .search_highlights {
 	color: white;
 	text-shadow: 0px 1px 2px hsla(0,0%,15%,.5);
-}  
+}
 
 .blue_terminal_demo [class*="featured_image_"] .infeed_body h2 a {text-shadow:none;}
 .blue_terminal_demo .error, .blue_terminal_demo .icon-alert {
@@ -374,10 +374,10 @@ you can use the generic selector below, but it's slower:
 
 
 .blue_terminal_demo a:hover, .blue_terminal_demo .icon:hover, .blue_terminal_demo a [class^="icon-"]:hover, .blue_terminal_demo a.active, .blue_terminal_demo .time_label a, .blue_terminal_demo .controls a:hover, .blue_terminal_demo form input[type="submit"]:hover, .blue_terminal_demo a.category_link.active:hover    {
-	color: hsla(0,0%,20%,1); 
+	color: hsla(0,0%,20%,1);
 }
 
-.blue_terminal_demo a.category_link:hover {	color: hsla(0,0%,45%,1); 
+.blue_terminal_demo a.category_link:hover {	color: hsla(0,0%,45%,1);
 }
 
 
@@ -498,7 +498,7 @@ margin-top: 1.5em;
 .blue_terminal_demo .headline {
 	font-size: 1.1em;
 font-weight: 700;
-color: 
+color:
 #333;
 text-align: right;
 }
@@ -637,7 +637,7 @@ text-align: right;
 .blue_terminal_demo form input[type="submit"]:active {
 	border: none;
 	background: none;
-}	
+}
 
 .blue_terminal_demo abbr[title] {
 	border-bottom: none;
@@ -694,7 +694,7 @@ position: absolute;}
 }
 
 .blue_terminal_demo .super_featured_body h3.profile_name {
-	margin-top: 0em; 
+	margin-top: 0em;
 	line-height: .8;
 	margin-bottom: .2em;
 }
@@ -783,7 +783,7 @@ font-size: 1em;
 		background: url('/img/work/blue_terminal/demo_img/gas.jpg');
 }
 .blue_terminal_demo .background_image_container.wind, .blue_terminal_demo #articles_show .background_image_container.wind {
-		background: url('/img/work/blue_terminal/demo_img/wind.jpg');	
+		background: url('/img/work/blue_terminal/demo_img/wind.jpg');
 }
 .blue_terminal_demo .background_image_container.geothermal, .blue_terminal_demo #articles_show .background_image_container.geothermal {
 		background: url('/img/work/blue_terminal/demo_img/geothermal.jpg');
@@ -795,7 +795,7 @@ font-size: 1em;
 		background: url('/img/work/blue_terminal/demo_img/hydro.jpg');
 }
 .blue_terminal_demo .background_image_container.coal, .blue_terminal_demo #articles_show .background_image_container.coal {
-	background: url('/img/work/blue_terminal/demo_img/coal.jpg');	
+	background: url('/img/work/blue_terminal/demo_img/coal.jpg');
 }
 .blue_terminal_demo .background_image_container.oil, .blue_terminal_demo #articles_show .background_image_container.oil {
 		background: url('/img/work/blue_terminal/demo_img/oil.jpg');
@@ -833,7 +833,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .blue_terminal_demo .super_featured_body, .blue_terminal_demo .profile_banner_container {
 	margin-bottom: 2em;
 	position: absolute;
-	bottom: 0; 
+	bottom: 0;
 	right: 0;
 	width: 100%;
 }
@@ -870,7 +870,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	text-transform: uppercase;
 	font-size: .95em;
 	padding-top: 0em;
-	margin: .65em 0 0em 0; 
+	margin: .65em 0 0em 0;
 	text-align: left;
 }
 
@@ -983,7 +983,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .blue_terminal_demo .mainmenu a {
 	font-size: 1em;
-	margin-left: .8em; 
+	margin-left: .8em;
 	font-weight: 700;
 	display: inline-block;
 }
@@ -999,7 +999,7 @@ font-weight: 700;
 line-height: 1.3;
 }
 input::-moz-placeholder {
-	opacity: 1; 
+	opacity: 1;
 	color: white;
 	text-shadow: 0px 1px 3px hsla(0,0%,15%,.5);
 cursor: pointer;
@@ -1034,7 +1034,7 @@ line-height: 1.3;
 
 
 .blue_terminal_demo .energy_source_item:after {
-	content: "+"; 
+	content: "+";
 	font-weight: 900;
 	padding:0 .4em 0 .2em;
 	display: inline-block;
@@ -1062,14 +1062,14 @@ line-height: 1.3;
 .blue_terminal_demo .gas .text, .blue_terminal_demo .gas:after/*, .blue_terminal_demo .gas.active*/ {color:#a288d9;}
 .blue_terminal_demo .biofuel .text, .blue_terminal_demo .biofuel:after/*, .blue_terminal_demo .biofuel.active*/ {color:#73c92d;}
 
-.blue_terminal_demo .back .coal .text, .blue_terminal_demo .back .coal:after,  
-.blue_terminal_demo .back .oil .text, .blue_terminal_demo .back .oil:after, 
-.blue_terminal_demo .back .hydroelectric .text, .blue_terminal_demo .back .hydroelectric:after, 
-.blue_terminal_demo .back .wind .text, .blue_terminal_demo .back .wind:after, 
-.blue_terminal_demo .back .geothermal .text, .blue_terminal_demo .back .geothermal:after, 
-.blue_terminal_demo .back .nuclear .text, .blue_terminal_demo .back .nuclear:after, 
-.blue_terminal_demo .back .solar .text, .blue_terminal_demo .back .solar:after, 
-.blue_terminal_demo .back .gas .text, .blue_terminal_demo .back .gas:after, 
+.blue_terminal_demo .back .coal .text, .blue_terminal_demo .back .coal:after,
+.blue_terminal_demo .back .oil .text, .blue_terminal_demo .back .oil:after,
+.blue_terminal_demo .back .hydroelectric .text, .blue_terminal_demo .back .hydroelectric:after,
+.blue_terminal_demo .back .wind .text, .blue_terminal_demo .back .wind:after,
+.blue_terminal_demo .back .geothermal .text, .blue_terminal_demo .back .geothermal:after,
+.blue_terminal_demo .back .nuclear .text, .blue_terminal_demo .back .nuclear:after,
+.blue_terminal_demo .back .solar .text, .blue_terminal_demo .back .solar:after,
+.blue_terminal_demo .back .gas .text, .blue_terminal_demo .back .gas:after,
 .blue_terminal_demo .back .biofuel .text, .blue_terminal_demo .back .biofuel:after {
 	color: white;
 }
@@ -1140,7 +1140,7 @@ line-height: 1.3;
 }
 
 .blue_terminal_demo .article_infeed {
-	height: 450px;	
+	height: 450px;
 	float: left;
 	margin-right: 1em;
 	position: relative;
@@ -1176,7 +1176,7 @@ width:100%;
 
 .blue_terminal_demo .infeed_internal_padding {
 	padding-left: .85em;
-	padding-right: .85em; 
+	padding-right: .85em;
 }
 
 .blue_terminal_demo .infeed_headertophalf {
@@ -1698,7 +1698,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .blue_terminal_demo .full_article .article_title {
-	margin-bottom: 1.5em; 
+	margin-bottom: 1.5em;
 }
 
 .blue_terminal_demo .article_section {
@@ -1815,7 +1815,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	float:left;
 	margin-right: 1em;
 }
-.blue_terminal_demo .article_listview .dateposted { 
+.blue_terminal_demo .article_listview .dateposted {
 float: right;
 margin-right: 0;}
 
@@ -2269,7 +2269,7 @@ height: 6.8em;
 
 
 .blue_terminal_demo .controls {
-	margin-left: -8.7em;
+	margin-left: -8em;
 }
 
 .blue_terminal_demo .featured_image_large .infeed_body h2, .blue_terminal_demo .card_featured_container h2  {
