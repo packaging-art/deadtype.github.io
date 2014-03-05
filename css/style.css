@@ -1311,6 +1311,7 @@ aside.flex_caption {
 
   .intro_text.major {
     line-height: 2.1;
+    width: 80%;
   }
 
   /* Articles Internal Spacing*/
