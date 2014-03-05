@@ -1305,11 +1305,11 @@ aside.flex_caption {
     margin-bottom: -5.85em;
   }
 
-  .personal, .intro_text {
+  .personal, .intro_text.major {
     font-size: 1.1em;
   }
 
-  .intro_text {
+  .intro_text.major {
     line-height: 2.1;
   }
 
