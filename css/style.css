@@ -1031,6 +1031,10 @@ aside.flex_caption {
   position: relative;
 }
 
+.full {
+  margin-bottom: .5em;
+}
+
 .centered_layout {
   text-align: center;
 }
@@ -1301,9 +1305,12 @@ aside.flex_caption {
     margin-bottom: -5.85em;
   }
 
+  .personal, .intro_text {
+    font-size: 1.1em;
+  }
+
   .intro_text {
     line-height: 2.1;
-    font-size: 1.1em;
   }
 
   /* Articles Internal Spacing*/
