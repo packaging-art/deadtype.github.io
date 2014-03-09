@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+#source 'https://rubygems.org'
 
-gem 'jekyll-press'
-gem 'yuicssmin'
+#gem 'jekyll-press'
+#gem 'yuicssmin'
