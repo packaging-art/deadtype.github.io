@@ -1,0 +1,1499 @@
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+/* =============================================================================
+   Core Typography
+========================================================================== */
+
+.copy {
+  font-family: "skolar","Georgia",serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.heading {
+  font-family: "brandon-grotesque",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* =============================================================================
+   Base
+========================================================================== */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -moz-font-feature-settings: "liga", "dlig";
+  /* EDIT: new syntax for FF 15+ */
+  -ms-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+  -webkit-font-smoothing: antialiased;
+}
+
+html, button, input, select, textarea {
+  @extend .copy;
+  line-height: 1.75;
+}
+
+body {
+  font-size: .8em;
+  margin: 0em;
+}
+
+.feed_wrap {
+  text-align: justify;
+}
+
+.work_item .feed_wrap {
+  text-align: center;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+*/
+
+::-moz-selection {
+  color: red;
+  text-shadow: none;
+}
+
+::selection {
+  color: red;
+  text-shadow: none;
+}
+
+a::-moz-selection {
+  color: red;
+  text-shadow: none;
+}
+
+a::selection {
+  color: red;
+  text-shadow: none;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+a, a:hover, h1 {
+  -webkit-transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
+  -o-transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
+  -ms-transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
+  transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
+}
+
+a, a .standoutlink, .emphasis_link, .emphasis_link:hover, .navigation li, .article_sub_info, .phone_number, p a, .title_subcaption .emphasis_link, .title_subcaption a.subtle_emphasis, a.subtle_emphasis {
+  font-style: italic;
+  text-decoration: none;
+  border-bottom: none;
+  color: #999999;
+}
+
+html, button, input, select, textarea, p a, figcaption a, aside a, .feedcontent a, .intro_text, .plain_link, .plain_link:hover, a h4, a .workgrid_metainfo, .title_subcaption a:hover, .title_subcaption a, .super_underscore h4 a:hover {
+  color: #111;
+}
+
+p a, figcaption a, p a:hover, figcaption a:hover, aside a, aside a:hover, .feedcontent a, .feedcontent a:hover {
+  font-style: inherit;
+  border-bottom: 1px solid lightgray;
+}
+
+.plain_link, .plain_link:hover, .grid_caption a, .grid_caption a:hover, .title_subcaption a, .title_subcaption a:hover {
+  border-bottom: none;
+}
+
+/* wordmark + */
+.inner_grid_item:hover h4 a, a h4:hover, .title_subcaption .emphasis_link:hover, .super_underscore:hover h1 a, .super_underscore:hover h1, , .super_underscore h1 a  {
+  color: red;
+}
+
+
+.title_subcaption .emphasis_link, .link_non_italic {
+  font-style:normal;
+}
+
+.inner_grid_item {
+
+}
+
+/* archive page item highlight
+.inner_grid_item:hover, .inner_grid_item {
+  -webkit-transition: background 0.3s ease-out, border-bottom 0.3s ease-out;
+  -moz-transition: background 0.3s ease-out, border-bottom 0.3s ease-out;
+  -o-transition: background 0.3s ease-out, border-bottom 0.3s ease-out;
+  -ms-transition: background 0.3s ease-out, border-bottom 0.3s ease-out;
+  transition: background 0.3s ease-out, border-bottom 0.3s ease-out;
+}
+
+.inner_grid_item:hover {
+  background:hsl(0,0%,97%);
+} */
+
+h4 a {
+  font-style: normal;
+  color: #222;
+}
+
+.plus_link {
+  font-weight: 600;
+}
+
+/* article header links */
+h2 a, h2 a:hover {
+  font-style: normal;
+  color: #222;
+}
+
+.clients a:hover {
+  color: #6b6b6b;
+}
+
+/* general nav active */
+.work_main_page .work_link, .work .work_link, .article .article_link, .info .info_link, .feed .feed_link, .project_page .work_link, .briefs_page .feed_link, .work_archive .work_link {
+  color: hsl(0, 0%, 5%);
+}
+
+/* inverse nav active */
+.nav_inverse .work_link, .article .nav_inverse .article_link, .info .nav_inverse .info_link, .nav_inverse li, .nav_inverse li a, .nav_inverse .active, .overlay_color h4, .overlay_color h4:hover {
+  color: #fafafa;
+
+}
+
+.nav_inverse nav li a:hover {
+  color: red;
+}
+
+/* general nav hover */
+nav li a:hover {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+a:hover, .smallcaps a:hover, .emphasis_link:hover, .title_subcaption a.subtle_emphasis:hover, a.subtle_emphasis:hover {
+  color: red;
+  border-bottom: none;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active {
+  outline: 0;
+}
+
+.wordmark {
+  font-weight: 900;
+  font-size: .7em;
+  line-height: 1.65;
+  a {
+    color: black;
+  }
+}
+
+.mainnav li:after {
+  /*content: "|";*/
+}
+
+.mainnav li:last-child:after {
+  content: "";
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0;
+}
+
+h1, .smallcaps, h3, h4, h5, .label, .menu_item {
+  @extend .heading;
+  text-transform: uppercase;
+}
+
+/* h1 - section titles/labels. */
+h1 {
+    font-size: .7em;
+}
+
+h1, h1 a {
+  font-weight: 700;
+  color: #999999;
+  font-style: normal;
+  padding: 0 1.5em;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* h2 - article style title */
+h2 {
+  font-weight: 600;
+  font-size: 1.7em;
+  line-height: 1.2;
+}
+
+/* h3 -  */
+h3, .smallcaps {
+  font-weight: 900;
+  font-size: 1.25em;
+}
+
+/* portfolio page opening title */
+.smallcaps {
+  line-height: 1;
+  color: red;
+}
+
+/* h4 - titles inside feed titles inside projects preview photos */
+h4, h5 {
+  font-size: .95em;
+  line-height: 1;
+  display: inline;
+}
+
+h5 {
+  font-size: .9em;
+  font-weight: 900;
+  display: inline-block;
+  border-bottom: 3px solid red;
+  padding-bottom: .3em;
+  white-space: nowrap;
+}
+
+.sub_section h5 + p {
+  margin-top: 3.5em;
+}
+
+h2, .work_item h4 {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+}
+
+p {
+  margin: 0;
+}
+
+p + p {
+  margin: 2em 0 0  0;
+}
+
+.in_body_aside {
+  margin: 2em 0;
+}
+
+.view_project_link {
+  margin-top: 1.4em;
+  display: inline-block;
+}
+
+.centered_layout .super_underscore h4 {
+  margin-bottom: 0.9em;
+}
+
+.hero_header_container .super_underscore h4 {
+  margin-bottom: 1em;
+}
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+.navigation, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+img {
+  border: 0;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+figure {
+  margin: 0;
+  position: relative;
+}
+
+figcaption, aside, .caption {
+  font-style: italic;
+  margin-top: 1.6em;
+  line-height: 1.6;
+}
+
+figcaption, aside {
+  font-size: .9em;
+}
+
+.image_layered_overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+}
+
+.intro_text {
+  font-style: italic;
+  text-align: center;
+}
+
+.center_text {
+  text-align: center;
+}
+
+/* =============================================================================
+   Flexbox
+   ========================================================================== */
+/* using flexbox for section separators and headers in order to achieve proper transparency */
+.flex_container_divider {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (doesn't work very well) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.ie9 .flex_container_divider {
+  display: none;
+}
+
+.flex_border {
+  -webkit-box-flex: 1;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;
+  /* OLD - Firefox 19- */
+  width: 20%;
+  /* For old syntax, otherwise collapses. */
+  -webkit-flex: 1;
+  /* Chrome */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  border-top: 1px solid lightgray;
+}
+
+.super_underscore .flex_container_divider {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.super_underscore .flex_border {
+    -webkit-box-flex: inherit;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: inherit;
+  /* OLD - Firefox 19- */
+  /* For old syntax, otherwise collapses. */
+  -webkit-flex: inherit;
+  /* Chrome */
+  -ms-flex: inherit;
+  /* IE 10 */
+  flex: inherit;
+  width: 1.4em;
+}
+
+.super_underscore h1, .super_underscore h1 a {
+  padding: 0 1.2em;
+}
+
+.label_holder, .overlay_label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.overlay_label {
+  margin-top: -0.9em;
+}
+
+.bottom_box .overlay_label {
+  margin-top: -0.75em;
+}
+
+.label_border {
+  border: 1px solid lightgray;
+  background: none;
+  font-size:.65em;
+  padding: .45em 1em .3em 1em;
+}
+
+.ellipsis_vertical_adjust {
+  vertical-align: 3px;
+}
+
+/* =============================================================================
+   Stylin Styles
+   ========================================================================== */
+.colorborderbottomthin {
+  border-bottom: solid 1px lightgray;
+}
+
+.knockout_text_shadow {
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.knockout_text, .knockout_text a, .work_item .knockout_text h4, .work_item.knockout_text h4, .knockout_text .workgrid_metainfo, .knockout_text .metainfo, .knockout_text h1 a {
+  color: #fafafa;
+}
+
+.knockout_text .workgrid_metainfo .flex_border {
+  border-top: 1px solid #fafafa;
+}
+
+.pagination {
+  margin-top: .3em;
+}
+
+.previous, .next {
+  display: inline-block;
+}
+
+.next {
+  float: right;
+}
+
+.clients {
+  text-align: center;
+}
+
+.clients [class*="icon-"] {
+  font-size: 5.3em;
+  margin: 0em 0.05em;
+}
+
+.margin_module > *:last-child, .margin_module_first > *:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.margin_module > *:first-child,
+.margin_module > *:first-child > *:first-child,
+.margin_module > *:first-child > *:first-child > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.margin_module_first > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.see_through {
+  padding: 3.5em 0;
+}
+
+.gray {
+  background: hsl(0,0%,96%);
+}
+.black {
+  background: hsl(0,0%,7%);
+}
+
+.event_racer {
+  background: #faf9f7;
+}
+
+.bracket {
+  border: 1px solid #e6e6e6;
+}
+
+.dark {
+  border-color: lightgray;
+}
+
+.flex_photo.see_through {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.overflow_container {
+  overflow-x: hidden;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.centered_layout .error {
+  font-size: 4em;
+
+}
+
+.archive_year_group :nth-child(1)  .divider_container {display:none;}
+
+/* ==|== primary styles =====================================================
+   Author:
+   ========================================================================== */
+/* Layout */
+.maincontainer, .content_wrap, .content_media_center, .img_divider, .image_inside_articles, .headertext_divider, .article_sub_info, .article_padding, .feed_wrap, .superwide, .content_media_right, [class*="divider_"], .workgrid_metainfo, .content_bleed, .content_media_center, .content_media_secondary, .content_media_outerframe, .mainnav, .news_text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.maincontainer {
+  max-width: 1360px;
+}
+
+.content_container {
+margin-left: auto;
+margin-right: auto;
+}
+
+.content_wrap {
+  position: relative;
+}
+
+@import 'master_navigation';
+@import 'cover_page';
+@import 'image_overlays';
+
+.page_info_header, .page_info_card {
+  font-style: italic;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.page_info_card {
+  text-align: center;
+
+}
+
+.page_info_card p {
+  line-height: 1.6;
+}
+
+.page_info_card .card_title, .page_info_card .card_info, .page_info_card .card_subinfo  {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.page_info_card .card_title {
+  font-size: 1.1em;
+}
+
+.personal {
+  .card_title {
+  font-size: 1.2em;
+  }
+}
+
+.intro_card {
+  margin: 13.5em auto 12em;
+}
+
+.page_info_card .card_subinfo {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.two_col {
+  float: left;
+  width: 50%;
+}
+
+  /* Articles Internal Spacing*/
+.article_padding .article_padding {
+  padding-top: 3.25em;
+  padding-bottom: 4em;
+}
+
+.article_padding .all_text.article_padding {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.article_padding .image_only.article_padding {
+  padding-top: 3.25em;
+  padding-bottom: 3.25em;
+}
+
+.article_padding .image_text.article_padding {
+  padding-top: 3.25em;
+  padding-bottom: 4em;
+}
+
+/* Articles */
+.article_padding {
+  padding-top: 3.25em;
+  padding-bottom: 5.25em;
+}
+
+.all_text.article_padding {
+  padding-top: 5.25em;
+  padding-bottom: 5.25em;
+}
+
+.image_only.article_padding {
+  padding-top: 3.25em;
+  padding-bottom: 3.25em;
+}
+
+.image_text.article_padding {
+  padding-top: 3.25em;
+  padding-bottom: 5.25em;
+}
+
+.image_caption {
+  margin-top: 2em;
+}
+
+.work_image {
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+}
+
+.sub_header.work_image {
+  padding-top: 2.25em;
+  padding-bottom: 0.25em;
+}
+
+.article_padding.last {
+  padding-bottom: 0!important;
+}
+
+.article_padding.first {
+  padding-top: 0!important;
+}
+
+.sub_section {
+  padding-bottom: 5em;
+}
+
+.work_main_page article + article {
+  padding-top: 0.7em;
+}
+
+.articleheader, .noimageheader, .headercaption {
+  margin-bottom: 2.5em;
+}
+
+.articleheader h2, .noimageheader h2, .headercaption h2 {
+  margin-bottom: .1em;
+}
+
+.articleheader {
+  margin-top: 1.8em;
+}
+
+.headercaption {
+  margin-top: .6em;
+}
+
+.article_sub_info {
+  font-style: normal;
+  line-height: 1.1;
+}
+
+.articlebody {
+  padding-top: 2em;
+  padding-bottom: 2.25em;
+}
+
+aside.flex_caption {
+  /*margin-bottom: 2.5em;*/
+}
+
+.first.articlebody {
+  padding-top: 0;
+  padding-bottom: 2.5em;
+}
+
+.work_intro {
+  padding-bottom: 1.2em;
+}
+
+.content_media_center + .content_media_center, .feed_wrap + .feed_wrap {
+  margin-top: 1em;
+}
+
+/*Nav Bar*/
+.wordmark {
+  display: inline;
+}
+
+.navigation {
+  float: right;
+  padding-top: 0.15em;
+  a {
+    font-size: .7em;
+  }
+}
+
+.mainnav li {
+  float: left;
+}
+
+.mainnav li a {
+  padding: 0 .8em;
+}
+
+.mainnav li:last-child a {
+  padding-right: 0em;
+}
+
+.nav_inverse {
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Hero Image styling */
+.background_imgcontainer {
+  position: relative;
+  z-index: 90;
+  height: 28em;
+}
+
+.hero_header_container {
+  text-align: center;
+}
+
+/* Work Items Page */
+.work_item {
+  margin-bottom: 0em;
+  position: relative;
+}
+
+.work_item header {
+  width: 100%;
+  height: 100%;
+  line-height: 1.15;
+}
+
+.work_item h4 {
+  font-style: normal;
+  display: inline-block;
+  font-weight: 900;
+  color: #333;
+}
+
+.title_subcaption {
+  margin-top: 1.6em;
+}
+
+.hero_header_container .title_subcaption {
+  margin-top: 1.8em;
+}
+
+.control_box {
+  position: absolute;
+}
+
+.full, .ninety, .three_quarters, .half {
+  position: relative;
+}
+
+.full {margin-bottom: .5em;}
+
+.centered_layout {
+  text-align: center;
+}
+
+.centered_layout .control_box {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+
+.bottom_box {
+  position: absolute;
+  text-align: center;
+  bottom: 1.9em;
+  width: 100%;
+}
+
+.workgrid_metainfo, .metainfo {
+  font-family: "brandon-grotesque",sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: .6em;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.non_knockout h4, .non_knockout .workgrid_metainfo {
+  color: #333;
+}
+
+.centered_layout h4 {
+  font-size: 1.65em;
+  margin: 0;
+  font-weight: 900;
+  font-style: normal;
+  display: inline-block;
+  width: 100%;
+}
+
+.centered_layout .workgrid_metainfo {
+  margin-top: 1em;
+  max-width: 27em;
+}
+
+/* Work Preview */
+.brief, .brief header, .brief .feedcontent, .brief footer {
+  display: inline;
+}
+
+.brief header:after {
+  content: "—";
+  vertical-align: 1px;
+}
+
+.brief footer {
+  color: #999999;
+  margin-right: .6em;
+  margin-left: .1em;
+  font-size: 1em;
+}
+
+.brief footer a, .article_sub_info a {
+  font-style: normal;
+}
+
+.feed_wrap .brief:before, .content_wrap .brief:before {
+  color: red;
+  font-weight: 700;
+  font-style: italic;
+  vertical-align: 1px;
+}
+
+#hideAll
+ {
+   position: fixed;
+   left: 0px;
+   right: 0px;
+   top: 0px;
+   bottom: 0px;
+   background-color: white;
+   z-index: 99; /* Higher than anything else in the document */
+
+ }
+
+.date {
+  font-style: normal;
+}
+
+.mainheader {
+  z-index: 150;
+}
+
+.background_wrap {
+  position: relative;
+  z-index: 100;
+}
+
+.text_article {
+  padding-bottom: .5em;
+}
+
+.photo_post_img {
+  max-height: 47em;
+  overflow: hidden;
+}
+
+.figure_group .figure_container + .figure_container {
+  margin-top: 0.75em;
+}
+
+.grid.article_padding {
+  padding-bottom: 0;
+}
+
+ .grid_caption {
+    height: 14.5em;
+  }
+
+.inner_grid_item {
+  position: relative;
+}
+
+.case_study_caption {
+  margin-top: 2.75em;
+}
+
+
+/* ==|== media queries ======================================================
+     ========================================================================== */
+@media only screen and (min-width: 30em) {
+  body {
+    font-size: .9em;
+  }
+
+  .grid {
+    width: 50%;
+    float: left;
+  }
+
+  .archive_year_group :nth-child(-n+2)  .divider_container {display:none;}
+
+
+  .grid .centered_layout h4 {
+    font-size: 1.4em;
+  }
+
+  .inner_grid_item {
+    margin: 0 1em;
+  }
+
+  .border-bottom {
+        border-bottom: 1px solid lightgray;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  .smallcaps {
+    font-size: 1.25em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  .intro_text {
+    text-align: center;
+  }
+
+  .ellipsis_vertical_adjust {
+    vertical-align: 3px;
+  }
+
+  .work_label .work_item figure, .work_item figure {
+    height: auto;
+    max-height: 26em;
+    overflow: hidden;
+  }
+
+  .hero_image_cheat, .background_imgcontainer {
+    height: 22em;
+  }
+
+  .body_card {
+    margin-bottom: 4em;
+  }
+
+  .articlebody {
+    padding-top: 2.4em;
+    padding-bottom: 2.5em;
+  }
+
+  .clients [class*="icon-"] {
+    font-size: 6em;
+    margin: 0 .15em;
+  }
+}
+@media only screen and (min-width: 42em) {
+  body {
+    line-height: 1.85;
+  }
+
+  .overlay_label {
+    margin-top: -.95em;
+  }
+
+  .bottom_box .overlay_label {
+    margin-top: -.7em;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin: 0 auto;
+  }
+
+  .centered_layout h4 {
+    font-size: 1.8em;
+  }
+
+  .smallcaps {
+    font-size: 1.35em;
+  }
+
+  .work_item figure, .work_label .work_item figure {
+    max-height: 29em;
+  }
+
+  .work_image figure {
+    max-height: 29em;
+    overflow: hidden;
+  }
+
+  .work_image {
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+  }
+
+  .sub_header.work_image {
+    padding-top: 2.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .body_whitespace, .body_flush, .body_layered, .body_card {
+    /*padding-top: 2.8em;*/
+  }
+
+  .articlebody {
+    padding-top: 2.8em;
+    padding-bottom: 3.1em;
+  }
+
+  .first.articlebody {
+    padding-bottom: 3em;
+  }
+
+  .body_whitespace {
+    margin-bottom: 6.2em;
+  }
+
+  .body_card {
+    margin-bottom: 7.5em;
+  }
+
+  .body_layered {
+    margin-bottom: -5.85em;
+  }
+
+.personal, .intro_text.major {
+    font-size: 1.1em;
+
+}
+.intro_text.major {
+  line-height: 2.1;
+  width: 80%;
+}
+
+  /* Articles Internal Spacing*/
+.article_padding .article_padding {
+  padding-top: 3.25em;
+  padding-bottom: 5em;
+}
+
+.article_padding .all_text.article_padding {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.article_padding .image_only.article_padding {
+  padding-top: 3.25em;
+  padding-bottom: 3.25em;
+}
+
+.article_padding .image_text.article_padding {
+  padding-top: 3.25em;
+  padding-bottom: 5em;
+}
+
+
+  /* Articles */
+.article_padding {
+  padding-top: 3.75em;
+  padding-bottom: 7em;
+}
+
+.all_text.article_padding {
+  padding-top: 7em;
+  padding-bottom: 7em;
+}
+
+.image_only.article_padding {
+  padding-top: 3.75em;
+  padding-bottom: 3.75em;
+}
+
+.image_text.article_padding {
+  padding-top: 3.75em;
+  padding-bottom: 7em;
+}
+
+  .articleheader {
+    margin-top: 2.4em;
+  }
+
+  aside.flex_caption {
+    padding-top: .25em;
+  }
+
+  .see_through {
+    padding: 4.25em 0;
+  }
+
+  .background_imgcontainer {
+    height: 29.5em;
+  }
+
+  .clients [class*="icon-"] {
+    font-size: 7em;
+    margin: 0 .25em;
+  }
+
+  .work_main_page article + article {
+    padding-top: 1em;
+  }
+
+  /* using flexbox for in article images with captions */
+  .photo_caption.left_align, .photo_caption.right_align, .flex figure {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (doesn't work very well) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    width: 100%;
+  }
+
+  .photo_caption.left_align .content_media_center, .photo_caption.left_align .flex_photo.content_wrap, .photo_caption.left_align .content_bleed, .photo_caption.left_align .content_alignto_left_margin, .photo_caption.left_align .content_alignto_right_margin, .right_align aside.flex_caption {
+    -webkit-box-ordinal-group: 2;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-ordinal-group: 2;
+    /* OLD - Firefox 19- */
+    -ms-flex-order: 2;
+    /* TWEENER - IE 10 */
+    -webkit-order: 2;
+    /* NEW - Chrome */
+    order: 2;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  }
+
+  .photo_caption.right_align .flex_caption, .photo_caption.left_align .flex_caption {
+    -webkit-box-flex: 1;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;
+    /* OLD - Firefox 19- */
+    width: 20%;
+    /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;
+    /* Chrome */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    line-height: 1.6;
+  }
+
+  .photo_caption.right_align .flex_caption {
+    text-align: right;
+  }
+
+  .ie9 .photo_caption.left_align, .ie9 .photo_caption.right_align {
+    display: block;
+  }
+
+  .ie9 .photo_caption.right_align .flex_photo, .ie9 .photo_caption.left_align .content_media_center, .ie9 .photo_caption.left_align .content_wrap {
+    margin: auto;
+  }
+
+  .ie9 .photo_caption.right_align .flex_caption, .ie9 .photo_caption.left_align .flex_caption {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+@media only screen and (min-width: 50em) {
+  body {
+    font-size: 1em;
+  }
+
+  .work_item figure, .work_label .work_item figure {
+    max-height: 34em;
+  }
+
+  .background_imgcontainer {
+    height: 32em;
+  }
+
+  .centered_layout h4 {
+    font-size: 1.8em;
+  }
+}
+@media only screen and (min-width: 57em) {
+  h2 {
+    font-size: 1.9em;
+  }
+
+ .overlay_label {
+    margin-top: -1em;
+  }
+
+  .clients [class*="icon-"] {
+    font-size: 7em;
+    margin: 0 .4em;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .background_imgcontainer {
+    height: 36em;
+  }
+
+  .work_image figure {
+    max-height: 31em;
+  }
+
+  .grid {
+    width:33.333%;
+  }
+  .archive_year_group :nth-child(-n+3) .divider_container {display:none;}
+
+
+}
+@media only screen and (min-width: 78em) {
+  body {
+    font-size: 1.1em;
+  }
+
+
+  .ellipsis_vertical_adjust {
+    vertical-align: 4px;
+  }
+
+  .centered_layout h4 {
+    font-size: 2em;
+  }
+
+  .work_label h4 {
+    line-height: 1.05;
+  }
+
+  .clients [class*="icon-"] {
+    font-size: 7.2em;
+    margin: 0 .4em;
+  }
+}
+
+@media only screen and (min-width: 80.5em) {
+    .navigation_element a {
+    font-size: .8em;
+  }
+}
+
+
+@media only screen and (min-width: 84em) {
+  body {
+    font-size: 1.1em;
+  }
+    .navigation_element a {
+    font-size: .8em;
+  }
+
+  .work_label .work_item figure {
+    max-height: 38em;
+  }
+}
+@media only screen and (min-width: 90em) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 125em) {
+  body {
+    font-size: 1.2em;
+  }
+}
+
+
+@import 'layout_math';
+@import 'news_columns';
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+/* For image replacement */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0;
+}
+
+.ir br {
+  display: none;
+}
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden;
+}
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* Black prints faster: h5bp.com/s */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  /* h5bp.com/t */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}

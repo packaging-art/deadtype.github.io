@@ -1,0 +1,137 @@
+.top_nav {
+  z-index: 100000;
+}
+
+.cover_container, .individual_slide {
+  position: absolute;
+  top: 0em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.navigation_element {
+  @extend .menu_item;
+  display: inline-block;
+  z-index: 100000;
+  position: fixed;
+  line-height: 1;
+  a {
+    font-style: normal;
+    font-size: .75em;
+    line-height: 1;
+    font-weight: 900;
+  }
+}
+
+.logo {
+  padding-bottom: .2em;
+  margin-bottom: .25em;
+
+  .cover_logo {
+    display: block;
+  }
+
+  .cover_description {
+    @extend .copy;
+    font-style: italic;
+    text-transform: lowercase;
+    line-height: 1.1;
+    display: block;
+    white-space: nowrap;
+  }
+
+  a {
+    color: black;
+  }
+}
+
+
+.page_link_containers {
+  display: inline-block;
+  width: auto;
+
+  .page_links {
+    span + span {
+    margin-left: 1em;
+    }
+  }
+}
+
+.cover {
+
+  .top_nav {
+  height: 10em;
+  z-index: 100000;
+  position: relative;
+  background: white;
+  }
+
+  .individual_slide {
+    margin-top: 9em;
+  }
+
+  a {
+      color: black;
+  }
+
+  .logo {
+    font-family: "futura-pt-condensed",sans-serif;
+    border-bottom: none;
+    a {
+    font-size: 2.5em;
+    line-height: .9;
+    }
+  }
+
+  .page_link_containers {
+      @extend .page_link_containers;
+      position: absolute;
+      bottom: 0;
+      top: auto;
+      right: auto;
+  }
+}
+
+.email_link {
+  a {
+    color:black;
+  }
+}
+
+.cover_comment {
+  font-size: .9em;
+  width:20em;
+  line-height: 1.45;
+  font-style: italic;
+  position: absolute;
+  color: white;
+
+  .about {
+    margin-bottom: 1em;
+    display: inline-block;
+    border-bottom: 2px solid white;
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 28em) {
+  .cover {
+    .page_link_containers {
+      position: fixed;
+        left: auto;
+        bottom: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 42em) {
+
+  .cover {
+    .logo {
+      a {
+      font-size: 3em;
+      }
+    }
+  }
+}

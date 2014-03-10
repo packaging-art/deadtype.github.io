@@ -1,0 +1,14 @@
+---
+---
+
+{% for post in site.categories.cover %}
+
+.{{post.title}} {
+	background-image: url('/img/{{post.path}}/2X_{{post.image}}');
+	background-size:cover;
+	{% if post.cover_background_position %}
+	background-position:{{ post.cover_background_position}};
+	{% endif %}
+}
+
+{% endif %}

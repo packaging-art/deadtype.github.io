@@ -1,0 +1,637 @@
+/* =============================================================================
+   Layout Automation with SCSS
+   ========================================================================== */
+$content_media_outerframe: 1em;
+$content_media_center: 94%;
+$content_media_secondary: 94%;
+$feed_wrap: 84.5%;
+$content_wrap: 84.5%;
+$content_media_center_margin: (100% - $content_media_center) / 2;
+$master_navigation_top_margin: 1.2em;
+
+
+/* Navigation — Cover */
+
+.news_page {width: $feed_wrap;}
+
+.cover_container {
+  margin-left: $content_media_outerframe;
+  margin-right: $content_media_outerframe;
+  margin-bottom: $content_media_outerframe;
+  margin-top: $master_navigation_top_margin;
+}
+
+.logo {
+  top: $master_navigation_top_margin;
+  left: $content_media_outerframe;
+}
+
+.page_link_containers {
+  right: $content_media_outerframe;
+  top: $master_navigation_top_margin;
+}
+
+.cover {
+  .page_link_containers {
+      top: auto;
+      left: $content_media_outerframe;
+      margin-bottom: $content_media_outerframe - .25em;
+  }
+}
+
+.email_link {
+  bottom: $content_media_outerframe;
+  right: $content_media_outerframe;
+}
+
+.cover_comment {
+  bottom: $content_media_outerframe;
+  left: $content_media_outerframe;
+}
+
+.cover_comment.text_right {
+  left: auto;
+  right: $content_media_outerframe;
+  text-align: right;
+}
+
+/* General Widths */
+
+.content_wrap, .feed_wrap {
+  width: $content_wrap;
+}
+
+.content_media_outerframe {
+  width: 100%;
+  padding-left: $content_media_outerframe;
+  padding-right: $content_media_outerframe;
+}
+
+.content_media_center, .content_media_secondary {
+  width: $content_media_center;
+}
+
+.content_media_center .feed_wrap {
+  width: ($feed_wrap / $content_media_center) * 100%;
+}
+
+.content_media_secondary .feed_wrap {
+  width: ($feed_wrap / $content_media_secondary) * 100%;
+}
+
+.feed_wrap .content_wrap {
+  width: ($content_wrap / $feed_wrap) * 100%;
+}
+
+.content_media_center .content_wrap {
+  width: ($content_wrap / $content_media_center) * 100%;
+}
+
+.content_media_secondary .content_wrap {
+  width: ($content_wrap / $content_media_secondary) * 100%;
+}
+
+.content_bleed {
+  margin-right: 0;
+  width: 100% - (100% - $content_media_center) / 2;
+}
+
+.content_alignto_left_margin, .content_alignto_right_margin {
+  width: 100% - (100% - $content_wrap)/2 - $content_media_center_margin;
+  margin-left: (100% - $content_wrap)/2;
+  margin-right: (100% - $content_media_center) / 2;
+}
+
+.content_alignto_right_margin {
+  margin-right: (100% - $content_wrap)/2;
+  margin-left: (100% - $content_media_center) / 2;
+}
+
+.content_media_center .content_wrap, .content_media_center .feed_wrap, .feed_wrap .content_wrap {
+  width: $content_wrap / $content_media_center * 100%;
+}
+
+.content_media_center .content_alignto_left_margin, .content_media_center .content_alignto_right_margin {
+  margin-left: ((100 - $content_wrap)/2 - $content_media_center_margin) / $content_media_center * 100%;
+  margin-right: (100% - $content_media_center) / 2;
+}
+
+.content_media_center .content_alignto_right_margin {
+  margin-right: ((100 - $content_wrap)/2 - $content_media_center_margin) / $content_media_center * 100%;
+  margin-left: (100% - $content_media_center) / 2;
+}
+
+@media only screen and (min-width: 28em) {
+
+.cover {
+  .page_link_containers {
+    left: auto;
+      right: $content_media_outerframe;
+      top: $master_navigation_top_margin;
+  }
+}
+
+}
+
+@media only screen and (min-width: 30em) {
+$content_media_secondary: 83%;
+$feed_wrap: 83%;
+$content_wrap: 70%;
+
+.content_media_center  {
+  width: $content_media_center;
+}
+
+.content_media_secondary  {
+  width: $content_media_secondary;
+}
+
+.feed_wrap {
+  width: $feed_wrap;
+}
+
+.content_wrap  {
+  width: $content_wrap;
+}
+
+.content_media_center .feed_wrap {
+  width: ($feed_wrap / $content_media_center) * 100%;
+}
+
+.content_media_secondary .feed_wrap {
+  width: ($feed_wrap / $content_media_secondary) * 100%;
+}
+
+.feed_wrap .content_wrap {
+  width: ($content_wrap / $feed_wrap) * 100%;
+}
+
+.content_media_center .content_wrap {
+  width: ($content_wrap / $content_media_center) * 100%;
+}
+
+.content_media_secondary .content_wrap {
+  width: ($content_wrap / $content_media_secondary) * 100%;
+}
+
+.content_alignto_left_margin, .content_alignto_right_margin {
+  width: 100% - (100% - $content_wrap)/ 2 - $content_media_center_margin;
+}
+
+.content_alignto_left_margin {
+  margin-left: (100% - $content_wrap) / 2;
+}
+
+.content_alignto_right_margin {
+  margin-right: (100% - $content_wrap) / 2;
+}
+
+.content_media_center .content_alignto_left_margin {
+  margin-left: ((100 - $content_wrap) / 2 - $content_media_center_margin) / $content_media_center * 100%;
+}
+.content_media_center .content_alignto_right_margin {
+  margin-right: ((100 - $content_wrap) / 2 - $content_media_center_margin) / $content_media_center * 100%;
+}
+}
+
+@media only screen and (min-width: 42em) {
+$content_media_outerframe: 1.15em;
+$content_media_secondary: 80%;
+$feed_wrap: 77%;
+$content_wrap: 62%;
+$master_navigation_top_margin: 1.3em;
+
+/* Navigation / Cover */
+
+.logo {
+  top: $master_navigation_top_margin;
+  left: $content_media_outerframe;
+}
+
+.cover_container {
+  margin-left: $content_media_outerframe;
+  margin-right: $content_media_outerframe;
+  margin-bottom: $content_media_outerframe;
+  margin-top: $master_navigation_top_margin;
+}
+
+.page_link_containers {
+  right: $content_media_outerframe;
+  top: $master_navigation_top_margin;
+}
+
+
+
+.email_link {
+  bottom: $content_media_outerframe;
+  right: $content_media_outerframe;
+}
+
+
+.cover_comment {
+  bottom: $content_media_outerframe;
+  left: $content_media_outerframe;
+}
+
+.cover_comment.text_right {
+  left: auto;
+  right: $content_media_outerframe;
+}
+
+/* General Widths */
+
+
+.content_media_secondary  {
+  width: $content_media_secondary;
+}
+
+.content_media_outerframe {
+  padding-left: $content_media_outerframe;
+  padding-right: $content_media_outerframe;
+}
+
+.feed_wrap {
+  width: $feed_wrap;
+}
+
+.content_wrap  {
+  width: $content_wrap;
+}
+
+.content_media_center .feed_wrap {
+  width: ($feed_wrap / $content_media_center) * 100%;
+}
+
+.content_media_secondary .feed_wrap {
+  width: ($feed_wrap / $content_media_secondary) * 100%;
+}
+
+.feed_wrap .content_wrap {
+  width: ($content_wrap / $feed_wrap) * 100%;
+}
+
+.content_media_center .content_wrap {
+  width: ($content_wrap / $content_media_center) * 100%;
+}
+
+.content_media_secondary .content_wrap {
+  width: ($content_wrap / $content_media_secondary) * 100%;
+}
+
+.content_alignto_left_margin, .content_alignto_right_margin {
+  width: 100% - (100% - $content_wrap)/ 2 - $content_media_center_margin;
+}
+
+.content_alignto_left_margin {
+  margin-left: (100% - $content_wrap) / 2;
+}
+
+.content_alignto_right_margin {
+  margin-right: (100% - $content_wrap) / 2;
+}
+
+.content_media_center .content_alignto_left_margin {
+  margin-left: ((100 - $content_wrap) / 2 - $content_media_center_margin) / $content_media_center * 100%;
+}
+
+.content_media_center .content_alignto_right_margin {
+  margin-right: ((100 - $content_wrap) / 2 - $content_media_center_margin) / $content_media_center * 100%;
+}
+
+.photo_caption.right_align .flex_caption, .photo_caption.left_align .flex_caption {
+  margin: 0 2% 0 $content_media_center_margin;
+}
+
+.photo_caption.right_align .flex_caption {
+  margin: 0 $content_media_center_margin 0 2%;
+}
+
+.photo_caption.right_align .content_media_center, .photo_caption.left_align .content_media_center  {
+  width: $content_wrap + (100% - $content_wrap) / 2 - $content_media_center_margin;
+}
+
+.photo_caption.right_align .content_bleed, .photo_caption.left_align .content_bleed  {
+  width: 100% - (100% - $content_wrap) / 2;
+  margin: 0;
+}
+
+.photo_caption.right_align .content_wrap , .photo_caption.left_align .flex_photo.content_wrap  {
+  width: $content_wrap;
+  margin-left: (100% - $content_wrap) / 2;
+  margin-right: 0;
+}
+
+.photo_caption.left_align .flex_photo.content_wrap  {
+  margin-right: (100% - $content_wrap) / 2;
+  margin-left: 0;
+}
+
+.photo_caption.right_align .content_media_center , .photo_caption.left_align .content_media_center, .photo_caption.right_align .content_alignto_left_margin, .photo_caption.right_align .content_alignto_right_margin {
+  margin-left: (100% - $content_media_center) / 2;
+  margin-right: 0;
+}
+
+.photo_caption.left_align .content_media_center, .photo_caption.left_align .content_alignto_left_margin, .photo_caption.left_align .content_alignto_right_margin {
+  margin-right:  (100% - $content_media_center) / 2;
+  margin-left: 0%;
+}
+}
+
+@media only screen and (min-width: 57em) {
+$feed_wrap: 75%;
+$content_wrap: 56%;
+
+.content_wrap  {
+  width: $content_wrap;
+}
+
+
+
+.feed_wrap {
+  width: $feed_wrap;
+}
+
+.content_media_center .feed_wrap {
+  width: ($feed_wrap / $content_media_center) * 100%;
+}
+
+.content_media_secondary .feed_wrap {
+  width: ($feed_wrap / $content_media_secondary) * 100%;
+}
+
+.feed_wrap .content_wrap {
+  width: ($content_wrap / $feed_wrap) * 100%;
+}
+
+.content_media_center .content_wrap {
+  width: ($content_wrap / $content_media_center) * 100%;
+}
+
+.content_media_secondary .content_wrap {
+  width: ($content_wrap / $content_media_secondary) * 100%;
+}
+
+.content_alignto_left_margin, .content_alignto_right_margin {
+  width: 100% - (100% - $content_wrap)/ 2 - $content_media_center_margin;
+}
+
+.content_alignto_left_margin {
+  margin-left: (100% - $content_wrap) / 2;
+}
+
+.content_alignto_right_margin {
+  margin-right: (100% - $content_wrap) / 2;
+}
+
+.content_media_center .content_alignto_left_margin {
+  margin-left: ((100 - $content_wrap) / 2 - $content_media_center_margin) / $content_media_center * 100%;
+}
+.content_media_center .content_alignto_right_margin {
+  margin-right: ((100 - $content_wrap) / 2 - $content_media_center_margin) / $content_media_center * 100%;
+}
+
+.photo_caption.right_align .flex_caption, .photo_caption.left_align .flex_caption {
+  margin: 0 2.5% 0 $content_media_center_margin;
+}
+
+.photo_caption.right_align .flex_caption {
+  margin: 0 $content_media_center_margin 0 2.5%;
+}
+
+.photo_caption.right_align .content_media_center, .photo_caption.left_align .content_media_center  {
+  width: $content_wrap + (100% - $content_wrap) / 2 - $content_media_center_margin;
+}
+
+.photo_caption.right_align .content_bleed, .photo_caption.left_align .content_bleed  {
+  width: 100% - (100% - $content_wrap) / 2;
+  margin: 0;
+}
+
+.photo_caption.right_align .content_wrap , .photo_caption.left_align .flex_photo.content_wrap  {
+  width: $content_wrap;
+  margin-left: (100% - $content_wrap) / 2;
+  margin-right: 0;
+}
+
+.photo_caption.left_align .flex_photo.content_wrap  {
+  margin-right: (100% - $content_wrap) / 2;
+  margin-left: 0;
+}
+}
+
+@media only screen and (min-width: 62em) {
+
+$feed_wrap: 72%;
+
+.content_wrap  {
+  width:$content_wrap;
+}
+
+.feed_wrap {
+  width: $feed_wrap;
+}
+
+.content_media_center .feed_wrap {
+  width: ($feed_wrap / $content_media_center) * 100%;
+}
+
+.content_media_secondary .feed_wrap {
+  width: ($feed_wrap / $content_media_secondary) * 100%;
+}
+
+.feed_wrap .content_wrap {
+  width: ($content_wrap / $feed_wrap) * 100%;
+}
+
+.content_media_center .content_wrap {
+  width: ($content_wrap / $content_media_center) * 100%;
+}
+
+.content_media_secondary .content_wrap {
+  width: ($content_wrap / $content_media_secondary) * 100%;
+}
+
+.content_alignto_left_margin {
+  margin-left: (100% - $content_wrap) / 2;
+}
+
+.content_alignto_right_margin {
+  margin-right: (100% - $content_wrap) / 2;
+}
+
+.content_media_center .content_alignto_left_margin {
+  margin-left: ((100 - $content_wrap) / 2 - $content_media_center_margin) / $content_media_center * 100%;
+}
+
+.content_media_center .content_alignto_right_margin {
+  margin-right: ((100 - $content_wrap) / 2 - $content_media_center_margin) / $content_media_center * 100%;
+}
+
+.photo_caption.right_align .content_media_center, .photo_caption.left_align .content_media_center  {
+  width: $content_wrap + (100% - $content_wrap) / 2 - $content_media_center_margin;
+}
+
+.photo_caption.right_align .content_bleed, .photo_caption.left_align .content_bleed  {
+  width: 100% - (100% - $content_wrap) / 2;
+  margin: 0;
+}
+
+.photo_caption.right_align .content_wrap , .photo_caption.left_align .flex_photo.content_wrap  {
+  width: $content_wrap;
+  margin-left: (100% - $content_wrap) / 2;
+  margin-right: 0;
+}
+
+.photo_caption.left_align .flex_photo.content_wrap  {
+  margin-right: (100% - $content_wrap) / 2;
+  margin-left: 0;
+}
+}
+
+@media only screen and (min-width: 70em) {
+
+$feed_wrap: 72%;
+$content_wrap: 53%;
+
+
+.content_wrap  {
+  width: $content_wrap;
+}
+
+.feed_wrap {
+  width: $feed_wrap;
+}
+
+.content_media_center .feed_wrap {
+  width: ($feed_wrap / $content_media_center) * 100%;
+}
+
+.content_media_secondary .feed_wrap {
+  width: ($feed_wrap / $content_media_secondary) * 100%;
+}
+
+.feed_wrap .content_wrap {
+  width: ($content_wrap / $feed_wrap) * 100%;
+}
+
+.content_media_center .content_wrap {
+  width: ($content_wrap / $content_media_center) * 100%;
+}
+
+.content_media_secondary .content_wrap {
+  width: ($content_wrap / $content_media_secondary) * 100%;
+}
+
+.content_alignto_left_margin, .content_alignto_right_margin {
+  width: 100% - (100% - $content_wrap)/ 2 - $content_media_center_margin;
+}
+
+.content_alignto_left_margin {
+  margin-left: (100% - $content_wrap) / 2;
+}
+
+.content_alignto_right_margin {
+  margin-right: (100% - $content_wrap) / 2;
+}
+
+.content_media_center .content_alignto_left_margin {
+  margin-left: ((100 - $content_wrap) / 2 - $content_media_center_margin) / $content_media_center * 100%;
+}
+
+.content_media_center .content_alignto_right_margin {
+  margin-right: ((100 - $content_wrap) / 2 - $content_media_center_margin) / $content_media_center * 100%;
+}
+
+.photo_caption.right_align .content_media_center, .photo_caption.left_align .content_media_center  {
+  width: $content_wrap + (100% - $content_wrap) / 2 - $content_media_center_margin;
+}
+
+.photo_caption.right_align .content_bleed, .photo_caption.left_align .content_bleed  {
+  width: 100% - (100% - $content_wrap) / 2;
+  margin: 0;
+}
+
+.photo_caption.right_align .content_wrap , .photo_caption.left_align .flex_photo.content_wrap  {
+  width: $content_wrap;
+  margin-left: (100% - $content_wrap) / 2;
+  margin-right: 0;
+}
+
+.photo_caption.left_align .flex_photo.content_wrap  {
+  margin-right: (100% - $content_wrap) / 2;
+  margin-left: 0;
+}
+}
+
+@media only screen and (min-width: 75em) {
+
+$feed_wrap: 67%;
+
+.content_wrap  {
+  width: $content_wrap;
+}
+
+.feed_wrap {
+  width: $feed_wrap;
+}
+
+.content_media_center .feed_wrap {
+  width: ($feed_wrap / $content_media_center) * 100%;
+}
+
+.content_media_secondary .feed_wrap {
+  width: ($feed_wrap / $content_media_secondary) * 100%;
+}
+
+.feed_wrap .content_wrap {
+  width: ($content_wrap / $feed_wrap) * 100%;
+}
+
+.content_media_center .content_wrap {
+  width: ($content_wrap / $content_media_center) * 100%;
+}
+
+.content_media_secondary .content_wrap {
+  width: ($content_wrap / $content_media_secondary) * 100%;
+}
+
+.content_alignto_left_margin, .content_alignto_right_margin {
+  width: 100% - (100% - $content_wrap)/ 2 - $content_media_center_margin;
+}
+
+.content_alignto_left_margin {
+  margin-left: (100% - $content_wrap) / 2;
+}
+
+.content_alignto_right_margin {
+  margin-right: (100% - $content_wrap) / 2;
+}
+
+.content_media_center .content_alignto_left_margin {
+  margin-left: ((100 - $content_wrap) / 2 - $content_media_center_margin) / $content_media_center * 100%;
+}
+
+.content_media_center .content_alignto_right_margin {
+  margin-right: ((100 - $content_wrap) / 2 - $content_media_center_margin) / $content_media_center * 100%;
+}
+
+.photo_caption.right_align .content_media_center, .photo_caption.left_align .content_media_center  {
+  width: $content_wrap + (100% - $content_wrap) / 2 - $content_media_center_margin;
+}
+
+.photo_caption.right_align .content_bleed, .photo_caption.left_align .content_bleed  {
+  width: 100% - (100% - $content_wrap) / 2;
+  margin: 0;
+}
+
+.photo_caption.right_align .content_wrap , .photo_caption.left_align .flex_photo.content_wrap  {
+  width: $content_wrap;
+  margin-left: (100% - $content_wrap) / 2;
+  margin-right: 0;
+}
+
+.photo_caption.left_align .flex_photo.content_wrap  {
+  margin-right: (100% - $content_wrap) / 2;
+  margin-left: 0;
+}
+}
