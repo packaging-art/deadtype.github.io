@@ -1485,7 +1485,7 @@ aside.flex_caption {
   }
 
   .clients [class*="icon-"] {
-    font-size: 6.5em;
+    font-size: 6em;
     margin: 0 .4em;
   }
 }
@@ -1528,6 +1528,7 @@ aside.flex_caption {
   }
 
   .clients [class*="icon-"] {
+    font-size: 7em;
     margin: 0 .4em;
   }
 }
