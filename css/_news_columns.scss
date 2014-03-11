@@ -18,7 +18,7 @@
 }
 
 @media screen and (min-width: 651px) and (max-width: 800px) {
-	$gutter: 1.15em;
+	$gutter: 1.05em;
 
 	#grid[data-columns]::before {
 		content: '2 .column.size-1of2';
@@ -38,7 +38,7 @@
 }
 
 @media screen and (min-width: 801px) and (max-width: 1248px) {
-	$gutter: 1.25em;
+	$gutter: 1.15em;
 
 	#grid[data-columns]::before {
 		content: '2 .column.size-1of2';
@@ -51,7 +51,7 @@
 	.news_page > :nth-of-type(2) {
 		padding-left: $gutter;
 	}
-		.news_page {max-width:685px;}
+		.news_page {max-width:700px;}
 }
 
 @media screen and (min-width: 1249px) and (max-width: 1344px) {
@@ -87,7 +87,7 @@
 		padding-left: $gutter;
 	}
 
-	.news_page {max-width:840px;}
+	.news_page {max-width:860px;}
 }
 
 @media screen and (min-width: 1901px) and (max-width: 2000px) {
@@ -111,7 +111,7 @@
 	}
 
 	.news_page {
-		max-width:1300px;
+		max-width:1325px;
 	}
 }
 
@@ -136,7 +136,7 @@
 	}
 
 	.news_page {
-		max-width:1375px;
+		max-width:1430px;
 	}
 }
 
@@ -177,9 +177,9 @@
 
 	h4 {
 	display: block;
-	font-size: 1.6em;
+	font-size: 1.35em;
 	font-weight: 900;
-	line-height:.95;
+	line-height:1;
 	}
 
 	h1 {

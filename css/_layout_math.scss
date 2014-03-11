@@ -1,13 +1,13 @@
 /* =============================================================================
    Layout Automation with SCSS
    ========================================================================== */
-$content_media_outerframe: 1em;
+$content_media_outerframe: .8em;
 $content_media_center: 94%;
 $content_media_secondary: 94%;
 $feed_wrap: 84.5%;
 $content_wrap: 84.5%;
 $content_media_center_margin: (100% - $content_media_center) / 2;
-$master_navigation_top_margin: 1.2em;
+$master_navigation_top_margin: 1em;
 
 
 /* Navigation — Cover */
@@ -35,7 +35,7 @@ $master_navigation_top_margin: 1.2em;
   .page_link_containers {
       top: auto;
       left: $content_media_outerframe;
-      margin-bottom: $content_media_outerframe - .25em;
+      margin-bottom: $content_media_outerframe;
   }
 }
 

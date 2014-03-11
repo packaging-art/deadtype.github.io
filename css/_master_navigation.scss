@@ -39,6 +39,7 @@
     line-height: 1.1;
     display: block;
     white-space: nowrap;
+    font-size: 1.1em;
   }
 
   a {
@@ -61,14 +62,14 @@
 .cover {
 
   .top_nav {
-  height: 10em;
+  height: 8.55em;
   z-index: 100000;
   position: relative;
   background: white;
   }
 
   .individual_slide {
-    margin-top: 9em;
+    margin-top: 7.55em;
   }
 
   a {
@@ -79,7 +80,7 @@
     font-family: "futura-pt-condensed",sans-serif;
     border-bottom: none;
     a {
-    font-size: 2.5em;
+    font-size: 2.25em;
     line-height: .9;
     }
   }
@@ -101,7 +102,7 @@
 
 .cover_comment {
   font-size: .9em;
-  width:20em;
+  width:16em;
   line-height: 1.45;
   font-style: italic;
   position: absolute;
