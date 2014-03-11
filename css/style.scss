@@ -469,7 +469,7 @@ figcaption, aside {
 }
 
 .overlay_label {
-  margin-top: -0.9em;
+  margin-top: -0.85em;
 }
 
 .bottom_box .overlay_label {
@@ -1059,9 +1059,7 @@ aside.flex_caption {
     line-height: 1.7;
   }
 
-  .overlay_label {
-    margin-top: -.95em;
-  }
+
 
   .bottom_box .overlay_label {
     margin-top: -.7em;
@@ -1311,9 +1309,6 @@ aside.flex_caption {
     font-size: 1.9em;
   }
 
- .overlay_label {
-    margin-top: -1em;
-  }
 
   .clients [class*="icon-"] {
     font-size: 7em;
@@ -1378,6 +1373,9 @@ aside.flex_caption {
     font-size: .8em;
   }
 
+  .overlay_label {
+    margin-top: -.9em;
+  }
   .centered_layout h4 {
     font-size: 1.9em;
   }
