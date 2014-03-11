@@ -64,11 +64,11 @@ html {
 
 html, button, input, select, textarea {
   @extend .copy;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 body {
-  font-size: .95em;
+  font-size: 1em;
   margin: 0em;
 }
 
@@ -249,7 +249,7 @@ h1, .smallcaps, h3, h4, h5, .label, .menu_item {
 
 /* h1 - section titles/labels. */
 h1 {
-    font-size: .6em;
+    font-size: .55em;
 }
 
 h1, h1 a {
@@ -288,7 +288,7 @@ h4, h5 {
 }
 
 h5 {
-  font-size: .9em;
+  font-size: .8em;
   font-weight: 900;
   display: inline-block;
   border-bottom: 3px solid red;
@@ -642,6 +642,7 @@ margin-right: auto;
   .card_title {
   font-size: 1.2em;
   font-style: normal;
+  line-height: .6;
   }
 }
 
@@ -970,7 +971,7 @@ aside.flex_caption {
 }
 
  .grid_caption {
-    height: 14.5em;
+    height: 12.75em;
   }
 
 .inner_grid_item {
@@ -1055,6 +1056,7 @@ aside.flex_caption {
 }
 @media only screen and (min-width: 42em) {
   body {
+    line-height: 1.7;
   }
 
   .overlay_label {
@@ -1076,7 +1078,7 @@ aside.flex_caption {
     }
 
       .workgrid_metainfo {
-    font-size: .55em;
+    font-size: .5em;
     margin-top: .7em;
 }
   }
@@ -1133,8 +1135,8 @@ aside.flex_caption {
 
 .personal, .intro_text.major {
     font-size: 1.1em;
-
 }
+
 .intro_text.major {
   line-height: 2.1;
   width: 80%;

@@ -64,11 +64,11 @@ html {
 }
 
 html, button, input, select, textarea {
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 body {
-  font-size: .95em;
+  font-size: 1em;
   margin: 0em;
 }
 
@@ -240,7 +240,7 @@ h1, .smallcaps, h3, h4, h5, .label, .menu_item, .navigation_element {
 
 /* h1 - section titles/labels. */
 h1 {
-  font-size: .6em;
+  font-size: .55em;
 }
 
 h1, h1 a {
@@ -279,7 +279,7 @@ h4, h5 {
 }
 
 h5 {
-  font-size: .9em;
+  font-size: .8em;
   font-weight: 900;
   display: inline-block;
   border-bottom: 3px solid red;
@@ -831,6 +831,7 @@ figure:hover .overlay_color {
 .personal .card_title {
   font-size: 1.2em;
   font-style: normal;
+  line-height: .6;
 }
 
 .intro_card {
@@ -1158,7 +1159,7 @@ aside.flex_caption {
 }
 
 .grid_caption {
-  height: 14.5em;
+  height: 12.75em;
 }
 
 .inner_grid_item {
@@ -1242,6 +1243,10 @@ aside.flex_caption {
   }
 }
 @media only screen and (min-width: 42em) {
+  body {
+    line-height: 1.7;
+  }
+
   .overlay_label {
     margin-top: -.95em;
   }
@@ -1259,7 +1264,7 @@ aside.flex_caption {
     font-size: 1.6em;
   }
   .centered_layout .workgrid_metainfo {
-    font-size: .55em;
+    font-size: .5em;
     margin-top: .7em;
   }
 
@@ -1742,35 +1747,35 @@ aside.flex_caption {
 @media only screen and (min-width: 42em) {
   /* Navigation / Cover */
   .logo {
-    top: 1.3em;
-    left: 1.15em;
+    top: 1.1em;
+    left: 1em;
   }
 
   .cover_container {
-    margin-left: 1.15em;
-    margin-right: 1.15em;
-    margin-bottom: 1.15em;
-    margin-top: 1.3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-top: 1.1em;
   }
 
   .page_link_containers, .cover .page_link_containers {
-    right: 1.15em;
-    top: 1.3em;
+    right: 1em;
+    top: 1.1em;
   }
 
   .email_link {
-    bottom: 1.15em;
-    right: 1.15em;
+    bottom: 1em;
+    right: 1em;
   }
 
   .cover_comment {
-    bottom: 1.15em;
-    left: 1.15em;
+    bottom: 1em;
+    left: 1em;
   }
 
   .cover_comment.text_right {
     left: auto;
-    right: 1.15em;
+    right: 1em;
   }
 
   /* General Widths */
@@ -1779,8 +1784,8 @@ aside.flex_caption {
   }
 
   .content_media_outerframe {
-    padding-left: 1.15em;
-    padding-right: 1.15em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   .feed_wrap {
