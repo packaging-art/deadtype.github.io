@@ -1293,7 +1293,6 @@ aside.flex_caption {
   }
 
   .cover {
-
     .top_nav {
     height: 9.1em;
     }
@@ -1336,6 +1335,16 @@ aside.flex_caption {
 @media only screen and (min-width: 78em) {
   body {
     font-size: 1.4em;
+  }
+
+  .cover {
+    .top_nav {
+    height: 8.1em;
+    }
+
+    .individual_slide {
+      margin-top: 7.1em;
+    }
   }
 
     .navigation_element {

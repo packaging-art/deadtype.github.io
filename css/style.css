@@ -1511,6 +1511,13 @@ aside.flex_caption {
     font-size: 1.4em;
   }
 
+  .cover .top_nav {
+    height: 8.1em;
+  }
+  .cover .individual_slide {
+    margin-top: 7.1em;
+  }
+
   .navigation_element {
     font-size: .85em;
   }
