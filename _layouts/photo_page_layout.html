@@ -21,7 +21,7 @@ category: photo_page
 		<div class="content_wrap image_caption">
 			<div class="brief photo_post">
 				<header>
-					<h4><a href="{{page.url}}">{{page.title}}</a></h4>
+					<h4>{{page.title}}</h4>
 				</header>
 
 			    <div class="feedcontent">
@@ -30,7 +30,7 @@ category: photo_page
 
 			     {% if page.show_date != nil %}
 			    <footer class="blah">
-						<a href="{{page.url}}">{{ page.date | date: "%b %d, %Y" }}</a>
+						{{ page.date | date: "%b %d, %Y" }}
 					</footer>
 				 {% endif %}
 

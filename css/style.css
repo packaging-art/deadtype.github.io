@@ -1320,12 +1320,12 @@ aside.flex_caption {
   /* Articles Internal Spacing*/
   .article_padding .article_padding {
     padding-top: 3.25em;
-    padding-bottom: 5em;
+    padding-bottom: 4.5em;
   }
 
   .article_padding .all_text.article_padding {
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 4.5em;
+    padding-bottom: 4.5em;
   }
 
   .article_padding .image_only.article_padding {
@@ -1335,18 +1335,18 @@ aside.flex_caption {
 
   .article_padding .image_text.article_padding {
     padding-top: 3.25em;
-    padding-bottom: 5em;
+    padding-bottom: 4.5em;
   }
 
   /* Articles */
   .article_padding {
     padding-top: 3.45em;
-    padding-bottom: 7em;
+    padding-bottom: 5.25em;
   }
 
   .all_text.article_padding {
-    padding-top: 7em;
-    padding-bottom: 7em;
+    padding-top: 5.25em;
+    padding-bottom: 5.25em;
   }
 
   .image_only.article_padding {
@@ -1356,7 +1356,7 @@ aside.flex_caption {
 
   .image_text.article_padding {
     padding-top: 3.45em;
-    padding-bottom: 7em;
+    padding-bottom: 5.25em;
   }
 
   .articleheader {

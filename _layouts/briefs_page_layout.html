@@ -12,7 +12,21 @@ category: briefs_page
 	<article class="all_text article_padding clearfix">
 		<div class="maincontainer">
 			<div class="feed_wrap">
-				 {{content}}
+				<div class="brief">
+					{% if page.title_brief != null %}
+				    <header>
+						<h4>{{page.title_brief}}</h4>
+					</header>
+					{% endif %}
+				    <div class="feedcontent">
+		                {{page.preview}}{% if page.show_date == nil %}.{% endif %}
+				    </div>
+					{% if page.show_date != nil %}
+					<footer class="blah">
+						{{ page.date | date: "%b %d, %Y" }}
+					</footer>
+   					{% endif %}
+				</div>
 			</div>
 		</div>
 	</article>
