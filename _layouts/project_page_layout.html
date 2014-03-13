@@ -2,9 +2,51 @@
 layout: default
 category: project_page
 ---
-{% include layout/project_top_title_summary.html %}
 
-<article class="image_text first article_padding section_alternation clearfix">
+<div class="third">&nbsp;</div>
+
+<div class="maincontainer first all_text article_padding">
+	<div class="content_wrap center_text ">
+		<div class="brief photo_post">
+			<header>
+				<h4>{{page.title}}</h4>
+			</header>
+
+		    <div class="feedcontent">
+                {{page.preview}}.
+		    </div>
+
+		     {% if page.show_date != nil %}
+		    <footer class="blah">
+					{{ page.date | date: "%b %d, %Y" }}
+				</footer>
+			 {% endif %}
+
+		</div>
+	</div>
+</div>
+
+<div class="divider_container maincontainer">
+	<div class="content_wrap">
+		<div class="label_holder">
+
+				<div class="overlay_label">
+					<h1 class=" ">images</h1>
+				</div>
+
+			<div class="flex_container_divider">
+
+				<div class="flex_border"></div>
+				<h1 class=" invisible">images</h1>
+				<div class="flex_border"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<article class="image_text  article_padding section_alternation clearfix">
 	<figure class="{{page.image_width}} {{page.background_color}} {{page.background_frame}}">
 			{% if page.secondary_width %}
 			<div class="{{page.secondary_width}}">
