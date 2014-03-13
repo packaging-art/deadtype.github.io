@@ -53,13 +53,13 @@ html {
   -ms-hyphens: auto;
   -o-hyphens: auto;
   hyphens: auto;
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -moz-font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
   /* EDIT: new syntax for FF 15+ */
-  -ms-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-  -webkit-font-feature-settings: "liga", "dlig";
-  font-feature-settings: "liga", "dlig";
+  -ms-font-feature-settings: "liga";
+  -o-font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1101,9 +1101,8 @@ aside.flex_caption {
 
 .brief footer {
   color: #999999;
-  margin-right: .6em;
   margin-left: .1em;
-  font-size: 1em;
+  font-size: .95em;
 }
 
 .brief footer a, .article_sub_info a {
