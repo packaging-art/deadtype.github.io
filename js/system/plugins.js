@@ -4,15 +4,18 @@ function viewport() {
     var ninety = height * 0.95;
     var three_quarters = height * 0.75;
     var half = height * 0.5;
+    var two_thirds = height * 0.6;
     var third = height * 0.3;
     full = parseInt(full) + 'px';
     ninety = parseInt(ninety) + 'px';
     three_quarters = parseInt(three_quarters) + 'px';
+    two_thirds = parseInt(two_thirds) + 'px';
     half = parseInt(half) + 'px';
     third = parseInt(third) + 'px';
     $(".full").css('height',full);
     $(".ninety").css('height',ninety);
     $(".three_quarters").css('height',three_quarters);
+    $(".two_thirds").css('height',two_thirds);
     $(".half").css('height',half);
     $(".third").css('height',third);
 }

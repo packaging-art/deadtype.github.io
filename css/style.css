@@ -272,10 +272,11 @@ h3, .smallcaps {
 }
 
 /* h4 - titles inside feed titles inside projects preview photos */
-h4, h5 {
+.centered_layout .brief h4, h4, h5 {
   font-size: .85em;
   line-height: 1;
   display: inline;
+  font-weight: 700;
 }
 
 h5 {
@@ -1034,12 +1035,16 @@ aside.flex_caption {
   position: absolute;
 }
 
-.full, .ninety, .three_quarters, .half {
+.full, .ninety, .three_quarters, .two_thirds .half {
   position: relative;
 }
 
 .full {
   margin-bottom: .5em;
+}
+
+.two_thirds {
+  margin-top: 1.5em;
 }
 
 .centered_layout {

@@ -3,30 +3,8 @@ layout: default
 category: photo_page
 ---
 
-<div class="third">&nbsp;</div>
+						{% include layout/brief_top_header.html %}
 
-
-
-<div class="maincontainer first all_text article_padding">
-	<div class="content_wrap center_text ">
-		<div class="brief photo_post">
-			<header>
-				<h4>{{page.title}}</h4>
-			</header>
-
-		    <div class="feedcontent">
-                {{page.preview}}.
-		    </div>
-
-		     {% if page.show_date != nil %}
-		    <footer class="blah">
-					{{ page.date | date: "%b %d, %Y" }}
-				</footer>
-			 {% endif %}
-
-		</div>
-	</div>
-</div>
 
 <div class="divider_container maincontainer">
 	<div class="content_wrap">
