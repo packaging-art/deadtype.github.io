@@ -25,6 +25,7 @@
 		{% if page.category == 'cover' %}
 			<link rel="stylesheet" href="/css/royalslider/royalslider.css">
 			<link rel="stylesheet" href="/css/cover_page/dynamic_cover.css">
+			<link rel="stylesheet" href="/css/royalslider/rs-default.css">
 		{% endif %}
 
 		{% if page.custom_typography != nil %}
@@ -64,7 +65,8 @@
 						transitionType: 'fade',
 						randomizeSlides: true,
 						controlNavigation: 'none',
-						arrowsNav: false,
+						arrowsNavHideOnTouch: true,
+
 						loop: true,
 						transitionSpeed: 1300,
 						keyboardNavEnabled: true,

@@ -589,6 +589,9 @@ figcaption, aside {
 
 .archive_year_group :nth-child(1)  .divider_container {display:none;}
 
+.rsDefault .rsArrowIcn:hover, .rsDefault .rsArrowIcn {
+  background-color: none;
+}
 /* ==|== primary styles =====================================================
    Author:
    ========================================================================== */
@@ -1297,7 +1300,7 @@ aside.flex_caption {
     height: 9.1em;
     }
 
-    .individual_slide {
+      #your-slider-selector {
       margin-top: 8.1em;
     }
   }
@@ -1342,7 +1345,7 @@ aside.flex_caption {
     height: 8.4em;
     }
 
-    .individual_slide {
+      #your-slider-selector {
       margin-top: 7.4em;
     }
   }

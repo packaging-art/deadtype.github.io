@@ -584,6 +584,10 @@ figcaption, aside {
   display: none;
 }
 
+.rsDefault .rsArrowIcn:hover, .rsDefault .rsArrowIcn {
+  background-color: none;
+}
+
 /* ==|== primary styles =====================================================
    Author:
    ========================================================================== */
@@ -664,7 +668,7 @@ figcaption, aside {
   position: relative;
   background: white;
 }
-.cover .individual_slide {
+.cover #your-slider-selector {
   margin-top: 7.55em;
 }
 .cover a {
@@ -1475,7 +1479,7 @@ aside.flex_caption {
   .cover .top_nav {
     height: 9.1em;
   }
-  .cover .individual_slide {
+  .cover #your-slider-selector {
     margin-top: 8.1em;
   }
 }
@@ -1514,7 +1518,7 @@ aside.flex_caption {
   .cover .top_nav {
     height: 8.4em;
   }
-  .cover .individual_slide {
+  .cover #your-slider-selector {
     margin-top: 7.4em;
   }
 
