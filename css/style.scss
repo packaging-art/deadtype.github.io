@@ -194,7 +194,7 @@ h2 a, h2 a:hover {
 
 }
 
-.nav_inverse nav li a:hover {
+.nav_inverse nav li a:hover, .color_red {
   color: red;
 }
 
@@ -1342,11 +1342,11 @@ aside.flex_caption {
 
   .cover {
     .top_nav {
-    height: 8.4em;
+    height: 8.8em;
     }
 
       #your-slider-selector {
-      margin-top: 7.4em;
+      margin-top: 7.8em;
     }
   }
 
@@ -1372,9 +1372,7 @@ aside.flex_caption {
   }
 }
 
-@media only screen and (min-width: 80.5em) {
 
-}
 
 
 @media only screen and (min-width: 84em) {

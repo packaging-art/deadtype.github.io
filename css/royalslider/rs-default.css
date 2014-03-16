@@ -487,3 +487,10 @@
 	font-size: 12px;
 	border-radius: 2px;
 }
+
+@media only screen and (min-width: 89.5em) {
+  .rsDefault .rsArrowLeft .rsArrowIcn, .rsDefault .rsArrowRight .rsArrowIcn {
+    width: 45px;
+    height: 45px;
+  }
+}
