@@ -674,6 +674,9 @@ figcaption, aside {
 .cover a {
   color: black;
 }
+.cover a:hover {
+  color: red;
+}
 .cover .logo {
   font-family: "futura-pt-condensed",sans-serif;
   border-bottom: none;
@@ -1585,10 +1588,10 @@ aside.flex_caption {
 }
 
 .cover_container {
-  margin-left: 0.8em;
-  margin-right: 0.8em;
-  margin-bottom: 0.8em;
-  margin-top: 1em;
+  /*margin-left: $content_media_outerframe;
+  margin-right: $content_media_outerframe;
+  margin-bottom: $content_media_outerframe;
+  margin-top: $master_navigation_top_margin;*/
 }
 
 .logo {
@@ -1760,10 +1763,10 @@ aside.flex_caption {
   }
 
   .cover_container {
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    margin-top: 1.1em;
+    /*margin-left: $content_media_outerframe;
+    margin-right: $content_media_outerframe;
+    margin-bottom: $content_media_outerframe;
+    margin-top: $master_navigation_top_margin;*/
   }
 
   .page_link_containers, .cover .page_link_containers {
