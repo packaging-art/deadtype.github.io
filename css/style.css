@@ -669,7 +669,7 @@ figcaption, aside {
   background: white;
 }
 .cover #your-slider-selector {
-  margin-top: 7.55em;
+  margin-top: 8.55em;
 }
 .cover a {
   color: black;
@@ -1481,7 +1481,7 @@ aside.flex_caption {
   }
 
   .cover .top_nav {
-    height: 9.1em;
+    height: 8.1em;
   }
   .cover #your-slider-selector {
     margin-top: 8.1em;
@@ -1520,7 +1520,7 @@ aside.flex_caption {
   }
 
   .cover .top_nav {
-    height: 8.8em;
+    height: 7.8em;
   }
   .cover #your-slider-selector {
     margin-top: 7.8em;
