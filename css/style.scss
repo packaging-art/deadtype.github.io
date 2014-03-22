@@ -1059,7 +1059,7 @@ aside.flex_caption {
 }
 @media only screen and (min-width: 42em) {
   body {
-    font-size: 1.05em;
+    font-size: 1.1em;
     line-height: 1.7;
   }
 
@@ -1072,15 +1072,25 @@ aside.flex_caption {
     margin: 0 auto;
   }
 
-  .centered_layout {
+.centered_layout {
    h4 {
     font-size: 1.6em;
     }
 
-      .workgrid_metainfo {
+    .workgrid_metainfo {
     font-size: .5em;
     margin-top: .7em;
-}
+    }
+  }
+
+  .cover {
+    .top_nav {
+    height: 10.6em;
+    }
+
+      #your-slider-selector {
+      margin-top: 10.6em;
+    }
   }
 
 
@@ -1294,15 +1304,7 @@ aside.flex_caption {
     font-size: 1.2em;
   }
 
-  .cover {
-    .top_nav {
-    height: 8.1em;
-    }
 
-      #your-slider-selector {
-      margin-top: 8.1em;
-    }
-  }
 }
 
 @media only screen and (min-width: 57em) {
@@ -1332,8 +1334,13 @@ aside.flex_caption {
   }
   .archive_year_group :nth-child(-n+3) .divider_container {display:none;}
 
-
 }
+@media only screen and (min-width: 64.5em) {
+  body {
+    font-size: 1.3em;
+  }
+}
+
 @media only screen and (min-width: 78em) {
   body {
     font-size: 1.4em;
@@ -1341,11 +1348,11 @@ aside.flex_caption {
 
   .cover {
     .top_nav {
-    height: 7.8em;
+    height: 9.8em;
     }
 
       #your-slider-selector {
-      margin-top: 7.8em;
+      margin-top: 9.8em;
     }
   }
 

@@ -125,9 +125,9 @@ $master_navigation_top_margin: 1em;
 
 .cover {
   .page_link_containers {
-    left: auto;
+    /*left: auto;
       right: $content_media_outerframe;
-      top: $master_navigation_top_margin;
+      top: $master_navigation_top_margin;*/
   }
 }
 
@@ -196,7 +196,7 @@ $content_wrap: 70%;
 
 @media only screen and (min-width: 42em) {
 $content_media_outerframe: 1em;
-$content_media_secondary: 80%;
+$content_media_secondary: 81%;
 $feed_wrap: 77%;
 $content_wrap: 62%;
 $master_navigation_top_margin: 1.1em;
@@ -216,8 +216,14 @@ $master_navigation_top_margin: 1.1em;
 }
 
 .page_link_containers {
-  right: $content_media_outerframe;
-  top: $master_navigation_top_margin;
+  /*right: $content_media_outerframe;
+  top: $master_navigation_top_margin;*/
+}
+
+.cover {
+    .page_link_containers {
+      left:$content_media_outerframe;
+  }
 }
 
 
