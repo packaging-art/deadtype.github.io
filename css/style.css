@@ -1251,7 +1251,7 @@ aside.flex_caption {
 }
 @media only screen and (min-width: 42em) {
   body {
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.7;
   }
 
@@ -1468,7 +1468,7 @@ aside.flex_caption {
 }
 @media only screen and (min-width: 50em) {
   body {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   .work_item figure, .work_label .work_item figure {
