@@ -9,7 +9,7 @@
 	font-weight: 400;
 	text-rendering: optimizeLegibility;
 
-	font-size: 1em;
+	font-size: .8em;
     line-height: 1.4;
 
 	-webkit-hyphens: auto;
@@ -1949,6 +1949,11 @@ float: left;
 
 @media only screen and (min-width: 42em) {
 
+
+.blue_terminal_demo,  .blue_terminal_demo button, .blue_terminal_demo select, .blue_terminal_demo textarea {
+	font-size: .7em;
+}
+
 figcaption.perspective_fix {padding-top: .8em;}
 
 .blue_terminal_demo .headline {
@@ -2261,7 +2266,7 @@ height: 6.8em;
 @media only screen and (min-width: 65em) {
 
 .blue_terminal_demo,  .blue_terminal_demo button, .blue_terminal_demo select, .blue_terminal_demo textarea {
-	font-size: .8em;
+	font-size: .6em;
 }
 
  .blue_terminal_demo .background_image_container {
