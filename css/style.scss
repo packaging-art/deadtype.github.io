@@ -1346,7 +1346,11 @@ aside.flex_caption {
     max-height: 31em;
   }
 
-
+  .icon_grid {
+  figure {
+        width: 25%;
+      }
+    }
   .grid {
     width:33.333%;
   }
@@ -1357,11 +1361,7 @@ aside.flex_caption {
   body {
     font-size: 1.4em;
   }
-      .icon_grid {
-  figure {
-        width: 25%;
-      }
-    }
+
 }
 
 @media only screen and (min-width: 78em) {
