@@ -1304,14 +1304,12 @@ aside.flex_caption {
     font-size: 1.2em;
   }
 
-
 }
 
 @media only screen and (min-width: 57em) {
   h2 {
     font-size: 1.9em;
   }
-
 
   .clients [class*="icon-"] {
     font-size: 6em;
@@ -1337,15 +1335,18 @@ aside.flex_caption {
 }
 @media only screen and (min-width: 64.5em) {
   body {
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
 }
 
 @media only screen and (min-width: 78em) {
   body {
-    font-size: 1.4em;
+    font-size: 1.5em;
   }
 
+    .navigation_element a {
+    font-size: .8em;
+  }
   .cover {
     .top_nav {
     height: 9.8em;
@@ -1383,11 +1384,8 @@ aside.flex_caption {
 
 @media only screen and (min-width: 84em) {
   body {
-    font-size: 1.5em;
   }
-    .navigation_element a {
-    font-size: .8em;
-  }
+
 
   .overlay_label {
     margin-top: -.9em;

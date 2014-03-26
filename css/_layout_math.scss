@@ -216,12 +216,13 @@ $master_navigation_top_margin: 1.1em;
 }
 
 .page_link_containers {
-  /*right: $content_media_outerframe;
-  top: $master_navigation_top_margin;*/
+  right: $content_media_outerframe;
+  top: $master_navigation_top_margin;
 }
 
 .cover {
     .page_link_containers {
+      top: auto;
       left:$content_media_outerframe;
   }
 }
