@@ -1357,6 +1357,11 @@ aside.flex_caption {
   body {
     font-size: 1.4em;
   }
+      .icon_grid {
+  figure {
+        width: 25%;
+      }
+    }
 }
 
 @media only screen and (min-width: 78em) {
@@ -1416,22 +1421,25 @@ aside.flex_caption {
   .work_label .work_item figure {
     max-height: 38em;
   }
-    .icon_grid {
-  figure {
-        width: 25%;
-      }
-    }
+
+
 }
 @media only screen and (min-width: 90em) {
   body {
     margin-left: auto;
     margin-right: auto;
   }
+
 }
 @media only screen and (min-width: 125em) {
   body {
     font-size: 1.6em;
   }
+            .icon_grid {
+  figure {
+        width: 20%;
+      }
+    }
 }
 
 
