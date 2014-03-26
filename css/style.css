@@ -659,7 +659,7 @@ figcaption, aside {
   width: auto;
 }
 .page_link_containers .page_links span + span {
-  margin-left: 1em;
+  margin-left: 1.5em;
 }
 
 .cover .top_nav {
