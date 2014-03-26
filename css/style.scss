@@ -985,6 +985,12 @@ aside.flex_caption {
 .case_study_caption {
   margin-top: 2.2em;
 }
+.icon_grid {
+  figure {
+    width: 50%;
+    float:left;
+  }
+}
 
 
 /* ==|== media queries ======================================================
@@ -997,6 +1003,12 @@ aside.flex_caption {
     width: 50%;
     float: left;
   }
+
+.icon_grid {
+  figure {
+    width: 33.3333%;
+  }
+}
 
   .archive_year_group :nth-child(-n+2)  .divider_container {display:none;}
 
@@ -1062,6 +1074,11 @@ aside.flex_caption {
     line-height: 1.7;
   }
 
+  .icon_grid {
+  figure {
+    width: 33.333%;
+  }
+}
   .bottom_box .overlay_label {
     margin-top: -.7em;
   }
@@ -1314,6 +1331,9 @@ aside.flex_caption {
     font-size: 6em;
     margin: 0 .4em;
   }
+
+
+
 }
 @media only screen and (min-width: 62em) {
 
@@ -1325,6 +1345,7 @@ aside.flex_caption {
   .work_image figure {
     max-height: 31em;
   }
+
 
   .grid {
     width:33.333%;
@@ -1395,6 +1416,11 @@ aside.flex_caption {
   .work_label .work_item figure {
     max-height: 38em;
   }
+    .icon_grid {
+  figure {
+        width: 25%;
+      }
+    }
 }
 @media only screen and (min-width: 90em) {
   body {

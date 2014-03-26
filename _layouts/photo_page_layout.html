@@ -25,18 +25,21 @@ category: photo_page
 </div>
 
 <article class=" article_padding image_text last clearfix">
+	{% if page.resolution_independent != null %}
+		{{ content }}
+	{% else %}
+
 	<figure class="{{page.image_width}} {{page.background_color}} {{page.background_frame}}">
 			{% if page.secondary_width %}
 			<div class="{{page.secondary_width}}">
 			{% endif %}
-
-            	{% include system/picturefill_dynamic_page.html %}
-
+        	{% include system/picturefill_dynamic_page.html %}
             {% if page.secondary_width %}
 			</div>
 			{% endif %}
 	</figure>
-
 	{{ content }}
+	{% endif %}
+
 </article>
 
