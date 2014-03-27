@@ -125,7 +125,7 @@ a, a .standoutlink, .emphasis_link, .emphasis_link:hover, .navigation li, .artic
 }
 
 html, button, input, select, textarea, p a, figcaption a, aside a, .feedcontent a, .intro_text, .plain_link, .plain_link:hover, a h4, a .workgrid_metainfo, .title_subcaption a:hover, .title_subcaption a, .super_underscore h4 a:hover {
-  color: #111;
+  color: #333;
 }
 
 p a, figcaption a, p a:hover, figcaption a:hover, aside a, aside a:hover, .feedcontent a, .feedcontent a:hover {
@@ -1383,7 +1383,7 @@ aside.flex_caption {
   }
 
     .navigation_element {
-    font-size: .85em;
+    font-size: .8em;
   }
 
   .ellipsis_vertical_adjust {
@@ -1399,7 +1399,7 @@ aside.flex_caption {
   }
 
   .clients [class*="icon-"] {
-    font-size: 7em;
+    font-size: 6.5em;
     margin: 0 .4em;
   }
 }
@@ -1428,6 +1428,9 @@ aside.flex_caption {
   body {
     margin-left: auto;
     margin-right: auto;
+  }
+      .navigation_element {
+    font-size: .85em;
   }
 
 }

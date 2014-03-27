@@ -124,7 +124,7 @@ a, a .standoutlink, .emphasis_link, .emphasis_link:hover, .navigation li, .artic
 }
 
 html, button, input, select, textarea, p a, figcaption a, aside a, .feedcontent a, .intro_text, .plain_link, .plain_link:hover, a h4, a .workgrid_metainfo, .title_subcaption a:hover, .title_subcaption a, .super_underscore h4 a:hover {
-  color: #111;
+  color: #333;
 }
 
 p a, figcaption a, p a:hover, figcaption a:hover, aside a, aside a:hover, .feedcontent a, .feedcontent a:hover {
@@ -1549,7 +1549,7 @@ aside.flex_caption {
   }
 
   .navigation_element {
-    font-size: .85em;
+    font-size: .8em;
   }
 
   .ellipsis_vertical_adjust {
@@ -1565,7 +1565,7 @@ aside.flex_caption {
   }
 
   .clients [class*="icon-"] {
-    font-size: 7em;
+    font-size: 6.5em;
     margin: 0 .4em;
   }
 }
@@ -1586,6 +1586,10 @@ aside.flex_caption {
   body {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .navigation_element {
+    font-size: .85em;
   }
 }
 @media only screen and (min-width: 125em) {
@@ -2120,6 +2124,44 @@ aside.flex_caption {
   }
 }
 @media only screen and (min-width: 75em) {
+  /* Navigation / Cover */
+  .logo {
+    top: 1.1em;
+    left: 1.3em;
+  }
+
+  .cover_container {
+    /*margin-left: $content_media_outerframe;
+    margin-right: $content_media_outerframe;
+    margin-bottom: $content_media_outerframe;
+    margin-top: $master_navigation_top_margin;*/
+  }
+
+  .page_link_containers, .cover .page_link_containers {
+    right: 1.3em;
+    top: 1.1em;
+  }
+
+  .cover .page_link_containers {
+    top: auto;
+    left: 1.3em;
+  }
+
+  .email_link {
+    bottom: 1.3em;
+    right: 1.3em;
+  }
+
+  .cover_comment {
+    bottom: 1.3em;
+    left: 1.3em;
+  }
+
+  .cover_comment.text_right {
+    left: auto;
+    right: 1.3em;
+  }
+
   .content_wrap {
     width: 53%;
   }
