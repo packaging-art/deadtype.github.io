@@ -15,10 +15,10 @@ $master_navigation_top_margin: 1em;
 .news_page {width: $feed_wrap;}
 
 .cover_container {
-  /*margin-left: $content_media_outerframe;
+  margin-left: $content_media_outerframe;
   margin-right: $content_media_outerframe;
   margin-bottom: $content_media_outerframe;
-  margin-top: $master_navigation_top_margin;*/
+  /*margin-top: $master_navigation_top_margin;*/
 }
 
 .logo {
@@ -209,10 +209,10 @@ $master_navigation_top_margin: 1.1em;
 }
 
 .cover_container {
-  /*margin-left: $content_media_outerframe;
+  margin-left: $content_media_outerframe;
   margin-right: $content_media_outerframe;
   margin-bottom: $content_media_outerframe;
-  margin-top: $master_navigation_top_margin;*/
+  /*margin-top: $master_navigation_top_margin;*/
 }
 
 .page_link_containers {
@@ -223,7 +223,7 @@ $master_navigation_top_margin: 1.1em;
 .cover {
     .page_link_containers {
       top: auto;
-      left:$content_media_outerframe;
+      left:$content_media_outerframe + .1em;
   }
 }
 
@@ -573,7 +573,7 @@ $content_wrap: 53%;
 @media only screen and (min-width: 75em) {
 
 $feed_wrap: 67%;
-$content_media_outerframe: 1.3em;
+$content_media_outerframe: 1.4em;
 
 
 /* Navigation / Cover */
@@ -584,10 +584,10 @@ $content_media_outerframe: 1.3em;
 }
 
 .cover_container {
-  /*margin-left: $content_media_outerframe;
+  margin-left: $content_media_outerframe;
   margin-right: $content_media_outerframe;
   margin-bottom: $content_media_outerframe;
-  margin-top: $master_navigation_top_margin;*/
+  /*margin-top: $master_navigation_top_margin;*/
 }
 
 .page_link_containers {
@@ -598,7 +598,7 @@ $content_media_outerframe: 1.3em;
 .cover {
     .page_link_containers {
       top: auto;
-      left:$content_media_outerframe;
+      left: $content_media_outerframe + .25em;;
   }
 }
 

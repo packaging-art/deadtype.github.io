@@ -68,7 +68,7 @@ html, button, input, select, textarea {
 }
 
 body {
-  font-size: 1.1em;
+  font-size: 1em;
   margin: 0em;
 }
 
@@ -997,6 +997,7 @@ aside.flex_caption {
      ========================================================================== */
 @media only screen and (min-width: 30em) {
   body {
+    font-size: 1.1em;
   }
 
   .grid {
