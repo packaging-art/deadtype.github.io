@@ -592,6 +592,51 @@ figcaption, aside {
 .rsDefault .rsArrowIcn:hover, .rsDefault .rsArrowIcn {
   background-color: none;
 }
+
+.cover {
+.cover_cover {
+  position: absolute;
+  width: 100%;
+  top:0;
+  bottom: 0;
+  background: hsla(0,0%,0%,.65);
+  z-index: 99999999;
+
+  .page_info_card {
+    height: 100%;
+  }
+
+.bottom_box {
+  bottom: .25em;
+}
+  .top_nav {
+    height: auto;
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
+  a, .cover_description {
+    color: white;
+  }
+  .cover_description {
+    margin-top: .2em;
+  }
+
+  .top_nav .navigation_element {
+    width:100%;
+    text-align: center;
+    left:0;
+    position: relative;
+
+  }
+
+  .page_link_containers .page_links span
+  {
+    margin: 1em;
+  }
+}
+
+}
+
 /* ==|== primary styles =====================================================
    Author:
    ========================================================================== */
@@ -1106,7 +1151,7 @@ aside.flex_caption {
     }
 
       #your-slider-selector {
-      margin-top: 10.6em;
+      margin-top: 0;
     }
   }
 
@@ -1379,7 +1424,7 @@ aside.flex_caption {
     }
 
       #your-slider-selector {
-      margin-top: 9.8em;
+      margin-top: 0;
     }
   }
 

@@ -1,3 +1,6 @@
+{% if page.category != 'cover' %}
+
+
 <div class='top_nav'>
 		<div class="logo navigation_element">
 			<span class='cover_logo'><a class="standoutlink" href="/{% if page.category == 'cover' %}news{% endif %}">deadtype</a></span>
@@ -14,6 +17,8 @@
 			</div>
 		</nav>
 </div>
+			{% endif %}
+
 
 {% if page.category != 'cover' %}
 <div class='bottom_nav'>

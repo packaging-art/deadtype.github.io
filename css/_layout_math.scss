@@ -15,10 +15,10 @@ $master_navigation_top_margin: 1em;
 .news_page {width: $feed_wrap;}
 
 .cover_container {
-  margin-left: $content_media_outerframe;
+  /*margin-left: $content_media_outerframe;
   margin-right: $content_media_outerframe;
   margin-bottom: $content_media_outerframe;
-  /*margin-top: $master_navigation_top_margin;*/
+  margin-top: $master_navigation_top_margin;*/
 }
 
 .logo {
@@ -209,10 +209,10 @@ $master_navigation_top_margin: 1.1em;
 }
 
 .cover_container {
-  margin-left: $content_media_outerframe;
+  /*margin-left: $content_media_outerframe;
   margin-right: $content_media_outerframe;
   margin-bottom: $content_media_outerframe;
-  /*margin-top: $master_navigation_top_margin;*/
+  margin-top: $master_navigation_top_margin;*/
 }
 
 .page_link_containers {
@@ -656,10 +656,10 @@ $content_media_outerframe: 1.4em;
 }
 
 .cover_container {
-  margin-left: $content_media_outerframe;
+  /*margin-left: $content_media_outerframe;
   margin-right: $content_media_outerframe;
   margin-bottom: $content_media_outerframe;
-  /*margin-top: $master_navigation_top_margin;*/
+  margin-top: $master_navigation_top_margin;*/
 }
 
 .page_link_containers {

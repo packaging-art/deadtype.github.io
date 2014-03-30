@@ -5,21 +5,40 @@ nav_layout: body_card
 category: cover
 ---
 
+
+
+<div class="cover_cover">
+	<div class="content_wrap page_info_card  clearfix">
+		<div class='centered_layout'>
+			<div class='control_box'>
+				<div class='top_nav'>
+					<div class="logo navigation_element">
+						<span class='cover_logo'><a class="standoutlink" href="/{% if page.category == 'cover' %}news{% endif %}">deadtype</a></span>
+						{% if page.category == 'cover' %}
+							<span class='cover_description'>visual, product <span class='color_red'>&</span> interaction design</span>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+				<div class='bottom_box'>
+					<nav class="page_link_containers navigation_element ">
+						<div class="page_links">
+							<span><a href="/news" class="feed_link">news</a></span>
+						    <span><a href="/work" class="work_link">work</a></span>
+						    <span><a href="/info" class="info_link">info</a></span>
+
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class='cover_container'>
 	<div id='your-slider-selector' class="royalSlider rsDefault">
 		{% for post in site.categories.cover %}
 		<div class='individual_slide {{post.cover_class}}'>
-			{% if post.cover_caption %}
-				{% if post.image_overlay %}
-				<div class='{{post.image_overlay}}'>
-				{% endif %}
-				<div class='cover_comment {% if post.cover_comment_align_right %} text_right {% endif %}'>
-					<a href='{{post.url}}'>{{post.cover_caption}}</a>
-				</div>
-				{% if post.image_overlay %}
-				</div>
-				{% endif %}
-			{% endif %}
 		</div>
 		{% endfor %}
 	</div>
