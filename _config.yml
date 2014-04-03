@@ -1,2 +1,3 @@
 permalink: /:title
 paginate: 15
+markdown: kramdown
