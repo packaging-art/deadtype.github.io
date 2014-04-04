@@ -1,6 +1,6 @@
 <!doctype html>
 <!--[if lte IE 9]>  <style type="text/css"> .gradient {filter: none;} </style> <html class="no-js ie9"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 9]><!--> <html class="" lang="en"> <!--<![endif]-->
 	<head>
 
 		<meta charset="utf-8">
@@ -11,6 +11,13 @@
 		<meta name="description" content="visual, product and interface design">
 		<meta name="author" content="deadtype">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	    <style type="text/css">
+	      .js .flash {visibility: hidden;}
+	    </style>
+	    <script type="text/javascript">
+	      document.documentElement.className = 'js';
+	    </script>
 
 		<link rel="stylesheet" href="/css/style.css">
 
@@ -48,11 +55,8 @@
 
 		{% include system/header-nav.html %}
 
-		{% if page.category != 'cover' %}
-		<div id="hideAll">&nbsp;</div>
-		{% endif %}
 
-		<div class='content_container'>
+		<div id='maincontent' class='content_container flash'>
 		{{ content }}
 		</div>
 
@@ -78,18 +82,17 @@
 			</script>
 		{% endif %}
 
-		{% if page.category != 'cover' %}
-		<script type="text/javascript">
-			window.onload = function()
-			  {$("#hideAll").addClass( "hidden" ); }
-		</script>
-		{% endif %}
 
 		{% if page.category != 'cover' %}
 		<script src="/js/libs/jquery-1.8.3.min.js"></script>
 		<script src="/js/system/plugins.js"></script>
 		<script src="/js/system/picturefill/picturefill.js"></script>
 		{% endif %}
+
+		<script type="text/javascript">
+			window.onload = function() {
+			  $("#maincontent").removeClass( "flash" ); }
+		</script>
 
 		{% if page.custom_jQuery %}
 		<script src="/js/{{page.path}}/{{page.custom_jQuery}}"></script>
