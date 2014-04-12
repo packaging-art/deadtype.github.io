@@ -1,3 +1,4 @@
 permalink: /:title
 paginate: 15
 markdown: kramdown
+port: 3200
