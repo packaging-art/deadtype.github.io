@@ -1,4 +1,4 @@
 deadtype.github.io
 ==================
 
-deadtype.ca
+designstudio.io
