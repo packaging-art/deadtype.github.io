@@ -1,5 +1,5 @@
 @media screen and (max-width: 320px){
-	$gutter: .85em;
+	$gutter: .9em;
 
 	#grid[data-columns]::before {
 		content: '2 .column.size-1of2';
