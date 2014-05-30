@@ -1,0 +1,51 @@
+.headline_content {font-size: .85em; line-height: 1.5;}
+.copy_content, .project_detail {font-size: .8em;}
+.project_detail {font-size: .7em;}
+
+.larger_screen {display: none;}
+
+@media only screen and (min-width: 32em) {
+  .headline_content {font-size: 1em;}
+  .copy_content {font-size: .85em;}
+  .larger_screen {display: inline-block;}
+}
+
+@media only screen and (min-width: 42em) {
+  body {
+    font-size: 1.25em;
+    line-height: 1.7;
+  }
+  .headline_content {
+    font-size: 1.1em;
+    line-height: 1.45;
+  }
+
+}
+
+@media only screen and (min-width: 50em) {
+  body {
+    font-size: 1.35em;
+  }
+  .headline_content {font-size: 1.2em; }
+  .copy_content {font-size: .9em;}
+}
+
+@media only screen and (min-width: 64.5em) {
+  body {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 78em) {
+  body {
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  body {
+    font-size: 1.8em;
+  }
+
+}
+

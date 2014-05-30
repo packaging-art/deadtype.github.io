@@ -1,0 +1,89 @@
+figcaption, aside, .caption {
+	@extend .about_projects;
+	margin: 3em 0 .85em;
+	color:#777;
+	line-height: 1.4;
+	display: none;
+}
+
+figcaption.first {margin-top: 0;}
+
+figure + figure {
+	margin-top: .6em;
+}
+
+.project_column + .project_column {
+	margin-top: .6em;
+}
+
+.no_split {
+	.project_column.left {
+		width: 50%;
+		float: left;
+		padding-right: .3em;
+	}
+	.project_column.right {
+		width: 50%;
+		float: right;
+		padding-left: .3em;
+	}
+}
+
+.project_detailed_info {
+	margin-top: 2em;
+}
+
+.detailed_caption {
+	margin: 1em auto 5em;
+}
+.detailed_intro + .project_detail {
+	margin-top: 2em;
+}
+
+
+
+@media only screen and (min-width: 32em) {
+
+
+.project_column + .project_column {
+	margin-top: 0;
+}
+
+.project_column.left {
+	width: 50%;
+	float: left;
+	padding-right: .3em;
+}
+.project_column.right {
+	width: 50%;
+	float: right;
+	padding-left: .3em;
+}
+
+.project_column.left {
+	width: 50%;
+	float: left;
+	padding-right: .3em;
+}
+
+
+.project_column.left_third {
+	width: 33.333%;
+	float: left;
+	padding-right: .4em;
+}
+
+.project_column.middle_third {
+	width: 33.333%;
+	float: left;
+	padding-left: .2em;
+	padding-right: .2em;
+}
+
+.project_column.right_third {
+	width: 33.333%;
+	float: right;
+	padding-left: .4em;
+}
+
+}

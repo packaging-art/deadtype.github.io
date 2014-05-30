@@ -1,0 +1,90 @@
+.navigation_container {
+	height: 100%;
+	padding: .95em 0 1em;
+	position: relative;
+}
+
+.tagline {
+	display: block;
+	float: left;
+	text-align: left;
+	width: 100%;
+	margin-bottom: 4em;
+	a {color: $core_text_color;}
+}
+
+.navigation {
+	@extend .heading;
+	color: $knockout_text_color;
+	font-weight: 900;
+	& a {
+		color: $knockout_text_color;
+	}
+}
+
+.navigation {
+	line-height: 1.25;
+	left:0;right:0;
+	font-size: $sans_serif_generic_size;
+	span + span {margin-left: 2em;}
+}
+
+.error {
+	font-size: 2em;
+	font-weight: 900;
+	margin-bottom: .5em;
+	.error_number {
+	padding: 0.15em .35em;
+	line-height: 1;
+	display: inline-block;
+	margin-bottom: .3em;
+		border: 3px solid $knockout_text_color;
+	}
+	.error_info {
+		margin-left: .2em;
+	}
+}
+
+.navigation {
+	span a {
+		color: lightgray;
+		font-style: normal;
+		text-transform: uppercase;
+	}
+	.active {
+	border-bottom: 2px solid $knockout_text_color;
+	a{	color: $knockout_text_color;}
+	}
+
+	a:hover {color: $knockout_text_color;}
+	.page_links { margin-top: 1.5em; font-size: .9em;}
+}
+
+.footer_section {
+	margin:2em 0 .6em;
+	span + span {margin-left: 2em;}
+	.footer_title {float: right;}
+}
+
+.footer_links {@extend .heading;
+font-size:.45em;
+font-weight: 900;
+ a {color:#999;}
+ a:hover {color: $knockout_text_color;}
+}
+
+
+@media only screen and (min-width: 32em) {
+
+.tagline {
+	width: 20em;
+	margin-bottom: 0;
+	display: inline-block;
+	float: right;
+	text-align: right;
+}
+.navigation_container {
+	padding: 1.2em 0 1em;
+}
+
+}

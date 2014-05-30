@@ -1,0 +1,31 @@
+<section class='work_section section_padding'>
+	<div class='major_section_header content_offset'>
+		<div class='headline_content seventy_five'>
+			{% if page.category == 'broken_page' %}
+			<p>404 - This does not appear to be a valid link. Are you looking for any of the projects below?</p>
+            {% else %}
+			<p>I am a graphic designer in Vancouver, BC. This is my recent print and digital work.</p>
+			{% endif %}
+		</div>
+	</div>
+	<div id='grid' class='news_page content_offset clearfix' data-columns>
+ 		{% for post in site.categories.feed %}
+			<article>
+				<figure class=" clearfix">
+					<a href="{{post.url}}">
+						<div class="{{post.background_color}} initial_image">
+						   	<img src="/img/{{post.path}}/bw_{{post.news_image}}">
+						</div>
+						<div class="{{post.background_color}} image_cover">
+					   		<img src="/img/{{post.path}}/{{post.news_image}}">
+					   	</div>
+					</a>
+				</figure>
+				<header>
+					<h4><a href="{{post.url}}">{{post.title_long}}</a></h4>
+					<div class='about_projects'><a href="{{post.url}}">{{post.subtitle}}</a></div>
+				</header>
+			</article>
+		{% endfor %}
+	</div>
+</section>

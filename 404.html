@@ -1,36 +1,9 @@
 ---
-layout: main_layout
-nav_layout: body_card
+layout: default
+title: not found
+category: broken_page
 
 ---
 
-<div class='three_quarters'>
-    <div class="centered_layout hero_header_container image_only  first article_padding">
-        <div class='control_box'>
-            <div class="non_knockout clearfix maincontainer">
-                <div class="content_media_center">
-                    <div class="content_wrap  clearfix" >
-                        <h4 class="error clearfix"><a href="/">404</a></h4>
-                         <div class="workgrid_metainfo clearfix">
-                            this appears to be an incorrect link</br>
-                            are you looking for <a class='link_non_italic' href="/news">news</a>, <a class='link_non_italic' href="/info">info</a> or <a class='link_non_italic' href="/work">work</a>?
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-{% include system/divider_label_param.html param='Or see the latest project' %}
-
-{% for post in site.categories.case_study limit:1 %}
-
-
-			<div class="image_text article_padding">
-                <div class='content_media_outerframe'>
-    				{% include work/work_post_image_headline_caption.html %}
-                </div>
-			</div>
-
-		{% endfor %}
+{% include core_components/work_section.html %}
+{% include core_components/about_section.html %}

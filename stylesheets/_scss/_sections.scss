@@ -1,0 +1,51 @@
+.section_padding {padding: 4.5em 0 4em;}
+.intro_section {margin-bottom: 4.2em;}
+.about_section {padding-bottom: 3em;}
+.work_section {margin-bottom: 3em}
+
+.section_header_container {
+	height: 3.25em;
+	position: relative;
+	header {
+		@extend .heading;
+		font-size: $sans_serif_generic_size;
+		font-weight: 900;
+		text-align: left;
+		display: inline-block;
+		float: left;
+		line-height: 1;
+	}
+}
+
+.major_section_header { margin-bottom: 1.25em;}
+
+h2 {
+	@extend .heading;
+	font-weight: 900;
+	font-size: 1.45em;
+	line-height: 1;
+}
+
+h3 {
+	@extend .heading;
+	font-size: $sans_serif_generic_size - .05em;
+	font-weight: 900;
+	line-height: 1.25;
+	margin-left: .2em;
+	margin-top:	0em;
+}
+
+.title_container + .copy_content {margin-top: 4.5em;}
+
+
+
+@media only screen and (min-width: 42em) {
+
+.intro_section {margin-bottom: 6em;}
+.section_padding {padding: 5em 0 4.5em;}
+.about_section {padding-bottom: 3em;}
+.work_section {margin-bottom: 4em}
+
+}
+
+

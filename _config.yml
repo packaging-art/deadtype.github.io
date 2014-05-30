@@ -1,4 +1,4 @@
 permalink: /:title
-paginate: 15
-markdown: kramdown
-port: 3200
+sass:
+    sass_dir: stylesheets/_scss
+    style: :compressed

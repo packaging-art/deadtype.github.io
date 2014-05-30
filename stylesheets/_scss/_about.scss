@@ -1,0 +1,15 @@
+.about_section {
+	a {color: $core_text_color;}
+	a:hover {color: $link_hover_color;}
+}
+
+.meta_info {
+	margin-top: 6.5em;
+	line-height: 1.6;
+	font-size: $sans_serif_generic_size - .05em;
+	font-weight: 900;
+	@extend .heading;
+	a {font-style: normal;}
+	.meta_title {font-size: 1.5em; line-height: 1.2;}
+}
+

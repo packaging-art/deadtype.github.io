@@ -1,0 +1,202 @@
+/* =============================================================================
+   Base
+========================================================================== */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  /* EDIT: new syntax for FF 15+ */
+  -ms-font-feature-settings: "liga";
+  -o-font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  background: white;
+}
+
+html, button, input, select, textarea {
+  @extend .copy;
+  line-height: 1.7;
+  color: $core_text_color;
+}
+
+body {
+  font-size: 1em;
+  margin: .4em .35em;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+*/
+
+::-moz-selection {
+  color: red;
+  text-shadow: none;
+}
+
+::selection {
+  color: red;
+  text-shadow: none;
+}
+
+a::-moz-selection {
+  color: red;
+  text-shadow: none;
+}
+
+a::selection {
+  color: red;
+  text-shadow: none;
+}
+
+.intro_wrap, h2, .work_item h4 {  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;}
+
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+a {
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-out, border-color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out, border-color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out, border-color 0.3s ease-out;
+  -ms-transition: color 0.3s ease-out, border-color 0.3s ease-out;
+  transition: color 0.3s ease-out, border-color 0.3s ease-out;
+  color: lightgray;
+}
+
+
+a {color: $core_text_color;}
+a:hover {color: $link_hover_color;}
+
+
+p a {
+  font-style: inherit;
+  text-decoration: none;
+  background-image: linear-gradient(to top, transparent, transparent 1px, hsl(0,0%,75%) 1px, hsl(0,0%,75%) 2px, transparent 1px);
+
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  @extend .heading;
+  margin: 0;
+}
+
+
+/* h4 - titles inside feed titles inside projects preview photos */
+h4, h5 {
+  line-height: .9;
+}
+
+  .about_projects {
+    font-weight: 500;
+    font-size: .55em;
+    margin-top: .2em;
+    line-height: 1.2;
+    a {
+    color: $core_text_color;
+    line-height: 1;
+    }
+  }
+
+p {
+  margin: 0;
+}
+
+p + p {
+  margin: 1.2em 0 0  0;
+}
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+ nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+figure {
+  margin: 0;
+  position: relative;
+}
+
+
+
+/* =============================================================================
+   Stylin Styles
+   ========================================================================== */
+
+
+.gray {
+  background: hsl(0,0%,93%);
+}
+.black {
+  background: hsl(0,0%,7%);
+}
+.event_racer {
+  background: #faf9f7;
+}
+
+.subtle_border {border: 2px solid hsl(0,0%,92%);}
+
+/* ==|== primary styles =====================================================
+   Author:
+   ========================================================================== */
+/* Layout */
+.content_offset {
+  margin-left: auto;
+  margin-right: auto;
+}
