@@ -9,6 +9,17 @@
 		<meta name="description" content="graphic design, user experience & art direction">
 		<meta name="author" content="Design Studio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		{% if page.category == 'project_page' or page.category == 'broken_page' %}
+	    <style type="text/css">
+	      .js .flash {visibility: hidden;}
+	    </style>
+	    <script type="text/javascript">
+	      document.documentElement.className = 'js';
+	    </script>
+	   	{% endif %}
+
+
 		<link rel="stylesheet" href="/stylesheets/style.css">
 		<script src="//use.typekit.net/etp2ynr.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
@@ -16,16 +27,22 @@
 
 	<body class="{{page.category}} clearfix">
 
-		<div id='maincontent' class='content_container'>
+		<div class='content_container'>
 			{% include core_components/intro_section.html %}
 			{{ content }}
 			{% include core_components/footer_section.html %}
-
 		</div>
 
 		<script src="/js/libs/jquery-1.8.3.min.js"></script>
 		<script src="/js/system/plugins.js"></script>
 		<script src="/js/system/picturefill/picturefill.js"></script>
+		{% if page.category == 'project_page' or page.category == 'broken_page' %}
+		<script type="text/javascript">
+			window.onload = function() {
+			  $("#grid").removeClass( "flash" ); }
+		</script>
+		{% endif %}
+
 	</body>
 
 </html>
