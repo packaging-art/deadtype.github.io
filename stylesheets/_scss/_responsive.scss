@@ -19,7 +19,6 @@
     font-size: 1.1em;
     line-height: 1.45;
   }
-
 }
 
 @media only screen and (min-width: 50em) {
@@ -28,17 +27,27 @@
   }
   .headline_content {font-size: 1.2em; }
   .copy_content {font-size: .9em;}
+
 }
 
 @media only screen and (min-width: 64.5em) {
   body {
     font-size: 1.4em;
   }
+
 }
 
 @media only screen and (min-width: 78em) {
   body {
     font-size: 1.7em;
+  }
+  #grid {
+    h4 {
+      font-size: $sans_serif_generic_size + .05em;
+    }
+  }
+  .about_projects {
+    font-size: .5em;
   }
 }
 

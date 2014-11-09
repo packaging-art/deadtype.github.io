@@ -123,8 +123,8 @@ h4, h5 {
 }
 
   .about_projects {
-    font-weight: 500;
-    font-size: .55em;
+    font-weight: 300;
+    font-size: .6em;
     margin-top: .2em;
     line-height: 1.2;
     a {
@@ -181,7 +181,7 @@ figure {
 
 
 .gray {
-  background: hsl(0,0%,93%);
+  border: 1px solid hsl(0,0%,90%);
 }
 .black {
   background: hsl(0,0%,7%);

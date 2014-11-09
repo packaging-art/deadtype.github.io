@@ -57,7 +57,7 @@
 	}
 }
 
-@media screen and (min-width: 950px) and (max-width: 1300px) {
+@media screen and (min-width: 950px) and (max-width: 1700px) {
 	$gutter: 2.9em;
 
 	#grid[data-columns]::before {
@@ -78,7 +78,7 @@
 	}
 }
 
-@media screen and (min-width: 1301px) {
+@media screen and (min-width: 1701px) {
 	$gutter: 3.25em;
 
 	#grid[data-columns]::before {
